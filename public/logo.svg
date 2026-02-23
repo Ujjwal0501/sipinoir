@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 60" fill="none">
+  <!-- Wine glass icon -->
+  <g transform="translate(8, 4)">
+    <path d="M24 4 L34 26 Q34 34 29 38 L29 46 L36 46 L36 50 L16 50 L16 46 L23 46 L23 38 Q18 34 18 26 Z" fill="#7c1d1d" stroke="#7c1d1d" stroke-width="0.5"/>
+    <ellipse cx="26" cy="26" rx="8" ry="4" fill="#a83232" opacity="0.5"/>
+  </g>
+  <!-- Wordmark -->
+  <text x="55" y="38" font-family="Georgia, serif" font-size="28" font-weight="700" fill="#1a0a0a" letter-spacing="1">sipinoir</text>
+</svg>

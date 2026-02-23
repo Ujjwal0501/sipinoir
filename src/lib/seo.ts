@@ -1,0 +1,27 @@
+export const siteConfig = {
+  name: "Sipinoir",
+  tagline: "Discover the World of Fine Wine",
+  description:
+    "Sipinoir is your ultimate guide to discovering, pairing, and enjoying fine wines from around the world. Explore curated wine collections, expert reviews, and personalized recommendations.",
+  url: "https://sipinoir.com",
+  ogImage: "/images/og-image.svg",
+  logo: "/logo.svg",
+  twitterHandle: "@sipinoir",
+  keywords: [
+    "wine",
+    "fine wine",
+    "wine discovery",
+    "wine pairing",
+    "wine reviews",
+    "wine recommendations",
+    "red wine",
+    "white wine",
+    "rosé wine",
+    "sommelier",
+    "wine collection",
+    "wine tasting",
+  ],
+  authors: [{ name: "Sipinoir Team", url: "https://sipinoir.com/about" }],
+  creator: "Sipinoir",
+  themeColor: "#1a0a0a",
+};
