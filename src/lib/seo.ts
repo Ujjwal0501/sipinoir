@@ -1,0 +1,28 @@
+export const siteConfig = {
+  name: "Sipi & Noir",
+  tagline: "Premium Jackets for Every Adventure",
+  description:
+    "Sipinoir crafts premium jackets and outerwear designed for style, comfort, and durability. Explore our collection of modern, functional jackets perfect for urban life and outdoor adventures.",
+  url: "https://sipinoir.com",
+  ogImage: "/images/og-image.svg",
+  logo: "/logo.png",
+  twitterHandle: "@sipinoir",
+  keywords: [
+    "jacket",
+    "jackets",
+    "premium jackets",
+    "outerwear",
+    "men's jackets",
+    "women's jackets",
+    "urban fashion",
+    "outdoor jackets",
+    "winter jackets",
+    "fashion",
+    "clothing brand",
+    "sustainable fashion",
+    "quality jackets",
+  ],
+  authors: [{ name: "Sipi & Noir Team", url: "https://sipinoir.com/about" }],
+  creator: "Sipi & Noir",
+  themeColor: "#1a0a0a",
+};
