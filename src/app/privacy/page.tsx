@@ -17,13 +17,13 @@ export default function PrivacyPage() {
       <Header />
       <main className="min-h-screen">
         <div className="mx-auto max-w-3xl px-4 py-12 sm:px-6 lg:px-8">
-          <h1 className="mb-8 text-4xl font-bold text-amber-950 dark:text-amber-50">
+          <h1 className="mb-8 text-4xl font-bold text-stone-900 dark:text-stone-50">
             Privacy Policy
           </h1>
 
-          <div className="space-y-6 text-amber-900 dark:text-amber-100">
+          <div className="space-y-6 text-stone-800 dark:text-stone-100">
             <section>
-              <h2 className="mb-4 text-2xl font-semibold text-amber-950 dark:text-amber-50">
+              <h2 className="mb-4 text-2xl font-semibold text-stone-900 dark:text-stone-50">
                 1. Introduction
               </h2>
               <p>
@@ -35,7 +35,7 @@ export default function PrivacyPage() {
             </section>
 
             <section>
-              <h2 className="mb-4 text-2xl font-semibold text-amber-950 dark:text-amber-50">
+              <h2 className="mb-4 text-2xl font-semibold text-stone-900 dark:text-stone-50">
                 2. Information We Collect
               </h2>
               <p className="mb-3">We may collect information about you in a variety of ways. The information we may collect on our Site includes:</p>
@@ -59,7 +59,7 @@ export default function PrivacyPage() {
             </section>
 
             <section>
-              <h2 className="mb-4 text-2xl font-semibold text-amber-950 dark:text-amber-50">
+              <h2 className="mb-4 text-2xl font-semibold text-stone-900 dark:text-stone-50">
                 3. How We Use Your Information
               </h2>
               <p className="mb-3">We use the information we collect for the following purposes:</p>
@@ -76,7 +76,7 @@ export default function PrivacyPage() {
             </section>
 
             <section>
-              <h2 className="mb-4 text-2xl font-semibold text-amber-950 dark:text-amber-50">
+              <h2 className="mb-4 text-2xl font-semibold text-stone-900 dark:text-stone-50">
                 4. Disclosure of Your Information
               </h2>
               <p className="mb-3">We may share your information in the following circumstances:</p>
@@ -97,7 +97,7 @@ export default function PrivacyPage() {
             </section>
 
             <section>
-              <h2 className="mb-4 text-2xl font-semibold text-amber-950 dark:text-amber-50">
+              <h2 className="mb-4 text-2xl font-semibold text-stone-900 dark:text-stone-50">
                 5. Data Security
               </h2>
               <p>
@@ -106,7 +106,7 @@ export default function PrivacyPage() {
             </section>
 
             <section>
-              <h2 className="mb-4 text-2xl font-semibold text-amber-950 dark:text-amber-50">
+              <h2 className="mb-4 text-2xl font-semibold text-stone-900 dark:text-stone-50">
                 6. Cookies
               </h2>
               <p>
@@ -115,7 +115,7 @@ export default function PrivacyPage() {
             </section>
 
             <section>
-              <h2 className="mb-4 text-2xl font-semibold text-amber-950 dark:text-amber-50">
+              <h2 className="mb-4 text-2xl font-semibold text-stone-900 dark:text-stone-50">
                 7. Your Rights
               </h2>
               <p className="mb-3">Depending on your location, you may have the following rights:</p>
@@ -130,7 +130,7 @@ export default function PrivacyPage() {
             </section>
 
             <section>
-              <h2 className="mb-4 text-2xl font-semibold text-amber-950 dark:text-amber-50">
+              <h2 className="mb-4 text-2xl font-semibold text-stone-900 dark:text-stone-50">
                 8. Third-Party Links
               </h2>
               <p>
@@ -139,7 +139,7 @@ export default function PrivacyPage() {
             </section>
 
             <section>
-              <h2 className="mb-4 text-2xl font-semibold text-amber-950 dark:text-amber-50">
+              <h2 className="mb-4 text-2xl font-semibold text-stone-900 dark:text-stone-50">
                 9. Children's Privacy
               </h2>
               <p>
@@ -148,7 +148,7 @@ export default function PrivacyPage() {
             </section>
 
             <section>
-              <h2 className="mb-4 text-2xl font-semibold text-amber-950 dark:text-amber-50">
+              <h2 className="mb-4 text-2xl font-semibold text-stone-900 dark:text-stone-50">
                 10. Changes to This Privacy Policy
               </h2>
               <p>
@@ -157,7 +157,7 @@ export default function PrivacyPage() {
             </section>
 
             <section>
-              <h2 className="mb-4 text-2xl font-semibold text-amber-950 dark:text-amber-50">
+              <h2 className="mb-4 text-2xl font-semibold text-stone-900 dark:text-stone-50">
                 11. Contact Us
               </h2>
               <p>
@@ -171,7 +171,7 @@ export default function PrivacyPage() {
               </p>
             </section>
 
-            <p className="mt-12 border-t border-amber-200 pt-8 text-sm text-amber-800 dark:border-amber-700 dark:text-amber-200">
+            <p className="mt-12 border-t border-stone-200 pt-8 text-sm text-stone-600 dark:border-stone-700 dark:text-stone-200">
               Last Updated: {new Date().toLocaleDateString("en-US", { year: "numeric", month: "long", day: "numeric" })}
             </p>
           </div>

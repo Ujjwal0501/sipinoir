@@ -52,12 +52,12 @@ export default async function HomePage() {
         {/* Recent Blog Posts Section */}
         <section
           aria-labelledby="recent-posts-heading"
-          className="bg-amber-200 px-4 py-20 sm:px-6 lg:px-8"
+          className="bg-stone-200 px-4 py-20 sm:px-6 lg:px-8"
         >
           <div className="mx-auto max-w-7xl">
             <h2
               id="recent-posts-heading"
-              className="text-3xl font-bold tracking-tight text-amber-950 sm:text-4xl mb-8"
+              className="text-3xl font-bold tracking-tight text-stone-900 sm:text-4xl mb-8"
             >
               Recently Posted
             </h2>
@@ -67,10 +67,10 @@ export default async function HomePage() {
                   <Link
                     key={post.slug}
                     href={`/blog/${post.slug}`}
-                    className="flex-shrink-0 w-80 bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-shadow"
+                    className="flex-shrink-0 w-80 bg-stone-50 rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-shadow"
                   >
                     {post.coverImage && (
-                      <div className="relative h-48 w-full bg-amber-100">
+                      <div className="relative h-48 w-full bg-stone-100">
                         <Image
                           src={post.coverImage}
                           alt={post.title}
@@ -81,20 +81,20 @@ export default async function HomePage() {
                     )}
                     <div className="p-6">
                       <div className="flex items-center gap-2 mb-3">
-                        <span className="text-xs font-medium px-2 py-1 bg-amber-100 text-amber-900 rounded">
+                        <span className="text-xs font-medium px-2 py-1 bg-stone-100 text-stone-800 rounded">
                           {post.category}
                         </span>
-                        <span className="text-xs text-amber-700">
+                        <span className="text-xs text-stone-500">
                           {post.readingTime}
                         </span>
                       </div>
-                      <h3 className="text-xl font-semibold text-amber-950 mb-2 line-clamp-2">
+                      <h3 className="text-xl font-semibold text-stone-900 mb-2 line-clamp-2">
                         {post.title}
                       </h3>
-                      <p className="text-sm text-amber-900 line-clamp-3 mb-3">
+                      <p className="text-sm text-stone-600 line-clamp-3 mb-3">
                         {post.excerpt}
                       </p>
-                      <div className="flex items-center justify-between text-xs text-amber-700">
+                      <div className="flex items-center justify-between text-xs text-stone-500">
                         <span>{post.author}</span>
                         <time dateTime={post.date}>
                           {new Date(post.date).toLocaleDateString('en-US', {

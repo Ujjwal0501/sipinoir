@@ -60,22 +60,22 @@ export default function BodyTypeSelector() {
   );
 
   const cardBase =
-    "relative overflow-hidden rounded-[26px] bg-[radial-gradient(circle_at_top,_rgba(255,255,255,0.95),_rgba(255,249,236,0.9)_55%,_rgba(255,244,220,0.85)_100%)] shadow-[0_24px_55px_rgba(76,49,22,0.18)] ring-1 ring-amber-200/80 backdrop-blur transition-all duration-300";
+    "relative overflow-hidden rounded-[26px] bg-[radial-gradient(circle_at_top,_rgba(255,255,255,0.98),_rgba(248,246,242,0.94)_55%,_rgba(240,237,230,0.90)_100%)] shadow-[0_24px_55px_rgba(15,12,10,0.14)] ring-1 ring-stone-300/80 backdrop-blur transition-all duration-300";
 
   return (
     <section
       aria-labelledby="body-type-heading"
-      className="bg-amber-50/70 px-4 py-20 sm:px-6 lg:px-8"
+      className="bg-stone-100/60 px-4 py-20 sm:px-6 lg:px-8"
     >
       <div className="mx-auto max-w-6xl">
         <div className="text-center">
           <h2
             id="body-type-heading"
-            className="text-3xl font-semibold tracking-tight text-amber-950 sm:text-4xl"
+            className="text-3xl font-semibold tracking-tight text-stone-900 sm:text-4xl"
           >
             Find the Perfect Jacket for Your Body Type!
           </h2>
-          <p className="mt-4 text-base text-amber-900 sm:text-lg">
+          <p className="mt-4 text-base text-stone-600 sm:text-lg">
             Select your body type to see personalized recommendations.
           </p>
         </div>
@@ -89,13 +89,13 @@ export default function BodyTypeSelector() {
                 key={type.id}
                 type="button"
                 onClick={() => setSelectedId(type.id)}
-                className={`${cardBase} group flex h-full w-[220px] flex-none snap-center flex-col items-center gap-4 px-4 pb-5 pt-5 text-center before:pointer-events-none before:absolute before:inset-0 before:rounded-[26px] before:bg-[linear-gradient(140deg,_rgba(255,255,255,0.35),_rgba(255,255,255,0)_55%)] before:opacity-0 before:transition-opacity before:duration-300 hover:-translate-y-1.5 hover:shadow-[0_30px_70px_rgba(76,49,22,0.25)] hover:before:opacity-100 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-amber-900 sm:w-full sm:flex-none sm:max-w-none ${
+                className={`${cardBase} group flex h-full w-[220px] flex-none snap-center flex-col items-center gap-4 px-4 pb-5 pt-5 text-center before:pointer-events-none before:absolute before:inset-0 before:rounded-[26px] before:bg-[linear-gradient(140deg,_rgba(255,255,255,0.35),_rgba(255,255,255,0)_55%)] before:opacity-0 before:transition-opacity before:duration-300 hover:-translate-y-1.5 hover:shadow-[0_30px_70px_rgba(15,12,10,0.20)] hover:before:opacity-100 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-stone-900 sm:w-full sm:flex-none sm:max-w-none ${
                   isActive
-                    ? "ring-2 ring-amber-900/80 shadow-[0_34px_85px_rgba(76,49,22,0.32)]"
+                    ? "ring-2 ring-stone-900/80 shadow-[0_34px_85px_rgba(15,12,10,0.24)]"
                     : ""
                 }`}
               >
-                <div className="relative aspect-square w-full overflow-hidden rounded-2xl bg-amber-100/70 ring-1 ring-amber-200/70 shadow-[inset_0_0_0_1px_rgba(255,255,255,0.4)]">
+                <div className="relative aspect-square w-full overflow-hidden rounded-2xl bg-stone-100/70 ring-1 ring-stone-300/70 shadow-[inset_0_0_0_1px_rgba(255,255,255,0.4)]">
                   <Image
                     src={type.image}
                     alt={type.label}
@@ -103,7 +103,7 @@ export default function BodyTypeSelector() {
                     className="object-contain p-4 transition-transform duration-300 group-hover:scale-110"
                   />
                 </div>
-                <p className="text-sm font-semibold uppercase tracking-[0.14em] text-amber-950">
+                <p className="text-sm font-semibold uppercase tracking-[0.14em] text-stone-900">
                   {type.label}
                 </p>
               </button>
@@ -112,7 +112,7 @@ export default function BodyTypeSelector() {
         </div>
 
         <div className="mt-16 text-center">
-          <h3 className="text-2xl font-semibold text-amber-950">
+          <h3 className="text-2xl font-semibold text-stone-900">
             Recommended Jackets for {selectedBodyType.label} Body Type
           </h3>
         </div>
@@ -123,7 +123,7 @@ export default function BodyTypeSelector() {
               key={item.title}
               className={`${cardBase} group flex h-full flex-col items-center p-6 text-center sm:p-7`}
             >
-              <div className="relative mx-auto aspect-square w-full max-w-sm overflow-hidden rounded-2xl bg-amber-100/70 ring-1 ring-amber-200/70 shadow-[inset_0_0_0_1px_rgba(255,255,255,0.4)]">
+              <div className="relative mx-auto aspect-square w-full max-w-sm overflow-hidden rounded-2xl bg-stone-100/70 ring-1 ring-stone-300/70 shadow-[inset_0_0_0_1px_rgba(255,255,255,0.4)]">
                 <Image
                   src={item.image}
                   alt={item.title}
@@ -131,7 +131,7 @@ export default function BodyTypeSelector() {
                   className="object-cover transition-transform duration-300 group-hover:scale-105"
                 />
               </div>
-              <p className="mt-5 text-base font-semibold uppercase tracking-[0.12em] text-amber-950">
+              <p className="mt-5 text-base font-semibold uppercase tracking-[0.12em] text-stone-900">
                 {item.title}
               </p>
             </div>
