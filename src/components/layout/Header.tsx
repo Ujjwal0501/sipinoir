@@ -6,7 +6,7 @@ const navLinks = [
   { href: "/shop", label: "Shop" },
   { href: "/blog", label: "Blog" },
   { href: "/about", label: "About" },
-  { href: "/contact-us", label: "Contact Us" },
+  { href: "/contact", label: "Contact Us" },
 ];
 
 export default function Header() {
