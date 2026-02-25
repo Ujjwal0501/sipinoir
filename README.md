@@ -30,7 +30,7 @@ src/
 └── types/               # Shared TypeScript types
 
 public/
-├── logo.svg             # Site logo
+├── logo.png             # Site logo
 ├── favicon.ico          # Favicon
 ├── apple-touch-icon.png # Apple touch icon
 └── images/

@@ -10,19 +10,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 1,
     },
     {
-      url: `${siteConfig.url}/wines`,
+      url: `${siteConfig.url}/shop`,
       lastModified: new Date(),
       changeFrequency: "weekly",
       priority: 0.8,
     },
     {
-      url: `${siteConfig.url}/pairings`,
-      lastModified: new Date(),
-      changeFrequency: "weekly",
-      priority: 0.7,
-    },
-    {
-      url: `${siteConfig.url}/reviews`,
+      url: `${siteConfig.url}/blog`,
       lastModified: new Date(),
       changeFrequency: "weekly",
       priority: 0.7,
