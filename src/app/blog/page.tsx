@@ -28,14 +28,14 @@ export default async function BlogPage() {
   return (
     <>
       <Header />
-      <main id="main-content" className="min-h-screen bg-gradient-to-b from-neutral-50 to-white">
+      <main id="main-content" className="min-h-screen bg-amber-50">
         {/* Hero Section */}
         <section className="py-16 md:py-24 px-4">
           <div className="container mx-auto max-w-6xl">
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-neutral-900 mb-4">
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-amber-950 mb-4">
               Blog
             </h1>
-            <p className="text-lg md:text-xl text-neutral-600 max-w-2xl">
+            <p className="text-lg md:text-xl text-amber-900 max-w-2xl">
               Style guides, care tips, and stories from the world of premium
               outerwear and sustainable fashion.
             </p>
@@ -47,7 +47,7 @@ export default async function BlogPage() {
           <div className="container mx-auto max-w-6xl">
             {posts.length === 0 ? (
               <div className="text-center py-20">
-                <p className="text-xl text-neutral-600">
+                <p className="text-xl text-amber-900">
                   No blog posts yet. Check back soon!
                 </p>
               </div>
@@ -56,11 +56,11 @@ export default async function BlogPage() {
                 {posts.map((post) => (
                   <article
                     key={post.slug}
-                    className="bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-shadow duration-300 border border-neutral-200"
+                    className="bg-amber-50 rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-shadow duration-300 border border-amber-200"
                   >
                     <Link href={`/blog/${post.slug}`} className="block group">
                       {post.featureImage ? (
-                        <div className="relative h-48 bg-neutral-200 overflow-hidden">
+                        <div className="relative h-48 bg-amber-100 overflow-hidden">
                           <Image
                             src={post.featureImage}
                             alt={post.title}

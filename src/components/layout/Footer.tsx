@@ -29,6 +29,7 @@ export default function Footer() {
                 alt={`${siteConfig.name} logo`}
                 width={120}
                 height={36}
+                className="dark:invert"
               />
             </Link>
             <p className="mt-4 text-sm text-amber-900 dark:text-amber-100">

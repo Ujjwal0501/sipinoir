@@ -20,6 +20,7 @@ export default function Header() {
             width={140}
             height={40}
             priority
+            className="dark:invert"
           />
         </Link>
         <nav aria-label="Main navigation">
