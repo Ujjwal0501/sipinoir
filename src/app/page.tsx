@@ -6,6 +6,7 @@ import Footer from "@/components/layout/Footer";
 import HeroSection from "@/components/HeroSection";
 import BodyTypeSelector from "@/components/BodyTypeSelector";
 import { siteConfig } from "@/lib/seo";
+import { getAllPosts } from "@/lib/blog";
 
 export const metadata: Metadata = {
   title: `${siteConfig.name} — ${siteConfig.tagline}`,
@@ -31,7 +32,10 @@ const jsonLd = {
   },
 };
 
-export default function HomePage() {
+export default async function HomePage() {
+  const recentPosts = await getAllPosts();
+  const displayPosts = recentPosts.slice(0, 6); // Show 6 most recent posts
+
   return (
     <>
       <script
@@ -45,28 +49,66 @@ export default function HomePage() {
         {/* Body Type Selector Section */}
         <BodyTypeSelector />
 
-        {/* CTA Section */}
+        {/* Recent Blog Posts Section */}
         <section
-          aria-labelledby="cta-heading"
-          className="bg-amber-200 px-4 py-20 text-center sm:px-6 lg:px-8"
+          aria-labelledby="recent-posts-heading"
+          className="bg-amber-200 px-4 py-20 sm:px-6 lg:px-8"
         >
-          <div className="mx-auto max-w-2xl">
+          <div className="mx-auto max-w-7xl">
             <h2
-              id="cta-heading"
-              className="text-3xl font-bold tracking-tight text-amber-950 sm:text-4xl"
+              id="recent-posts-heading"
+              className="text-3xl font-bold tracking-tight text-amber-950 sm:text-4xl mb-8"
             >
-              Start Your Wine Journey Today
+              Recently Posted
             </h2>
-            <p className="mt-4 text-lg text-amber-900">
-              Join thousands of wine lovers and discover your next favourite
-              bottle.
-            </p>
-            <Link
-              href="/get-started"
-              className="mt-8 inline-block rounded-full bg-amber-950 px-8 py-3 text-sm font-semibold text-amber-50 shadow-sm transition-colors hover:bg-amber-900"
-            >
-              Get Started — It&apos;s Free
-            </Link>
+            <div className="overflow-x-auto scrollbar-hide">
+              <div className="flex gap-6 pb-4">
+                {displayPosts.map((post) => (
+                  <Link
+                    key={post.slug}
+                    href={`/blog/${post.slug}`}
+                    className="flex-shrink-0 w-80 bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-shadow"
+                  >
+                    {post.coverImage && (
+                      <div className="relative h-48 w-full bg-amber-100">
+                        <Image
+                          src={post.coverImage}
+                          alt={post.title}
+                          fill
+                          className="object-cover"
+                        />
+                      </div>
+                    )}
+                    <div className="p-6">
+                      <div className="flex items-center gap-2 mb-3">
+                        <span className="text-xs font-medium px-2 py-1 bg-amber-100 text-amber-900 rounded">
+                          {post.category}
+                        </span>
+                        <span className="text-xs text-amber-700">
+                          {post.readingTime}
+                        </span>
+                      </div>
+                      <h3 className="text-xl font-semibold text-amber-950 mb-2 line-clamp-2">
+                        {post.title}
+                      </h3>
+                      <p className="text-sm text-amber-900 line-clamp-3 mb-3">
+                        {post.excerpt}
+                      </p>
+                      <div className="flex items-center justify-between text-xs text-amber-700">
+                        <span>{post.author}</span>
+                        <time dateTime={post.date}>
+                          {new Date(post.date).toLocaleDateString('en-US', {
+                            month: 'short',
+                            day: 'numeric',
+                            year: 'numeric',
+                          })}
+                        </time>
+                      </div>
+                    </div>
+                  </Link>
+                ))}
+              </div>
+            </div>
           </div>
         </section>
       </main>
