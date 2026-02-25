@@ -28,14 +28,14 @@ export default async function BlogPage() {
   return (
     <>
       <Header />
-      <main id="main-content" className="min-h-screen bg-gradient-to-b from-neutral-50 to-white">
+      <main id="main-content" className="min-h-screen bg-stone-50">
         {/* Hero Section */}
         <section className="py-16 md:py-24 px-4">
           <div className="container mx-auto max-w-6xl">
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-neutral-900 mb-4">
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-stone-900 mb-4">
               Blog
             </h1>
-            <p className="text-lg md:text-xl text-neutral-600 max-w-2xl">
+            <p className="text-lg md:text-xl text-stone-600 max-w-2xl">
               Style guides, care tips, and stories from the world of premium
               outerwear and sustainable fashion.
             </p>
@@ -47,7 +47,7 @@ export default async function BlogPage() {
           <div className="container mx-auto max-w-6xl">
             {posts.length === 0 ? (
               <div className="text-center py-20">
-                <p className="text-xl text-neutral-600">
+                <p className="text-xl text-stone-600">
                   No blog posts yet. Check back soon!
                 </p>
               </div>
@@ -56,11 +56,11 @@ export default async function BlogPage() {
                 {posts.map((post) => (
                   <article
                     key={post.slug}
-                    className="bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-shadow duration-300 border border-neutral-200"
+                    className="bg-stone-50 rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-shadow duration-300 border border-stone-200"
                   >
                     <Link href={`/blog/${post.slug}`} className="block group">
                       {post.featureImage ? (
-                        <div className="relative h-48 bg-neutral-200 overflow-hidden">
+                        <div className="relative h-48 bg-stone-100 overflow-hidden">
                           <Image
                             src={post.featureImage}
                             alt={post.title}
@@ -69,7 +69,7 @@ export default async function BlogPage() {
                           />
                         </div>
                       ) : (
-                        <div className="h-48 bg-gradient-to-br from-neutral-800 to-neutral-900 flex items-center justify-center">
+                        <div className="h-48 bg-gradient-to-br from-stone-800 to-stone-900 flex items-center justify-center">
                           <span className="text-white text-6xl font-bold opacity-10">
                             SN
                           </span>
@@ -77,8 +77,8 @@ export default async function BlogPage() {
                       )}
 
                       <div className="p-6">
-                        <div className="flex items-center gap-3 mb-3 text-sm text-neutral-600">
-                          <span className="bg-neutral-100 px-3 py-1 rounded-full text-xs font-medium">
+                        <div className="flex items-center gap-3 mb-3 text-sm text-stone-500">
+                          <span className="bg-stone-100 px-3 py-1 rounded-full text-xs font-medium">
                             {post.category}
                           </span>
                           <time dateTime={post.date}>
@@ -101,20 +101,20 @@ export default async function BlogPage() {
                               />
                             </div>
                           )}
-                          <h2 className="text-xl font-bold text-neutral-900 group-hover:text-neutral-700 transition-colors">
+                          <h2 className="text-xl font-bold text-stone-900 group-hover:text-stone-700 transition-colors">
                             {post.title}
                           </h2>
                         </div>
 
-                        <p className="text-neutral-600 mb-4 line-clamp-3">
+                        <p className="text-stone-600 mb-4 line-clamp-3">
                           {post.excerpt}
                         </p>
 
                         <div className="flex items-center justify-between text-sm">
-                          <span className="text-neutral-500">
+                          <span className="text-stone-500">
                             {post.readingTime}
                           </span>
-                          <span className="text-neutral-900 font-medium group-hover:underline">
+                          <span className="text-stone-900 font-medium group-hover:underline">
                             Read more →
                           </span>
                         </div>

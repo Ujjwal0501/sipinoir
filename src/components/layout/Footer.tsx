@@ -19,7 +19,7 @@ const footerLinks = {
 
 export default function Footer() {
   return (
-    <footer className="border-t border-amber-200 bg-amber-50 dark:border-amber-700 dark:bg-amber-900">
+    <footer className="border-t border-stone-200 bg-stone-50 dark:border-stone-700 dark:bg-stone-900">
       <div className="mx-auto max-w-6xl px-4 py-12 sm:px-6 lg:px-8">
         <div className="grid grid-cols-2 gap-8 md:grid-cols-4">
           <div className="col-span-2 md:col-span-1">
@@ -29,15 +29,16 @@ export default function Footer() {
                 alt={`${siteConfig.name} logo`}
                 width={120}
                 height={36}
+                className="dark:invert"
               />
             </Link>
-            <p className="mt-4 text-sm text-amber-900 dark:text-amber-100">
+            <p className="mt-4 text-sm text-stone-600 dark:text-stone-300">
               {siteConfig.tagline}
             </p>
           </div>
           {Object.entries(footerLinks).map(([group, links]) => (
             <div key={group}>
-              <h3 className="text-xs font-semibold uppercase tracking-wider text-amber-950 dark:text-amber-50">
+              <h3 className="text-xs font-semibold uppercase tracking-wider text-stone-900 dark:text-stone-100">
                 {group}
               </h3>
               <ul className="mt-4 space-y-2">
@@ -45,7 +46,7 @@ export default function Footer() {
                   <li key={link.href}>
                     <Link
                       href={link.href}
-                      className="text-sm text-amber-900 transition-colors hover:text-amber-950 dark:text-amber-200 dark:hover:text-amber-50"
+                      className="text-sm text-stone-600 transition-colors hover:text-stone-900 dark:text-stone-400 dark:hover:text-stone-50"
                     >
                       {link.label}
                     </Link>
@@ -55,8 +56,8 @@ export default function Footer() {
             </div>
           ))}
         </div>
-        <div className="mt-12 border-t border-amber-200 pt-8 dark:border-amber-700">
-          <p className="text-center text-sm text-amber-800 dark:text-amber-200">
+        <div className="mt-12 border-t border-stone-200 pt-8 dark:border-stone-700">
+          <p className="text-center text-sm text-stone-500 dark:text-stone-400">
             &copy; {new Date().getFullYear()} {siteConfig.name}. All rights
             reserved.
           </p>

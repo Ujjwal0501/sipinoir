@@ -20,12 +20,12 @@ export default function ShopPage() {
   const shopDomain = `https://shop.${new URL(siteConfig.url).hostname}`;
 
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gradient-to-b from-white to-gray-50">
+    <div className="min-h-screen flex items-center justify-center bg-stone-50">
       <div className="max-w-md w-full px-6 py-12 text-center">
         <div className="mb-6">
-          <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-blue-100 mb-4">
+          <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-stone-100 mb-4">
             <svg
-              className="w-8 h-8 text-blue-600 animate-spin"
+              className="w-8 h-8 text-stone-600 animate-spin"
               fill="none"
               viewBox="0 0 24 24"
             >
@@ -44,21 +44,21 @@ export default function ShopPage() {
               />
             </svg>
           </div>
-          <h1 className="text-2xl font-bold text-gray-900 mb-2">
+          <h1 className="text-2xl font-bold text-stone-900 mb-2">
             Redirecting to Shop
           </h1>
-          <p className="text-gray-600 mb-4">
+          <p className="text-stone-800 mb-4">
             You&apos;re being redirected to our shop. This should only take a
             moment.
           </p>
         </div>
 
         <div className="space-y-3">
-          <p className="text-sm text-gray-500">
+          <p className="text-sm text-stone-600">
             If you&apos;re not redirected automatically, you can also{" "}
             <a
               href={shopDomain}
-              className="font-semibold text-blue-600 hover:text-blue-700 underline"
+              className="font-semibold text-stone-800 hover:text-stone-700 underline"
             >
               click here to visit the shop
             </a>

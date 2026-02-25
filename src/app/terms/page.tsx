@@ -17,13 +17,13 @@ export default function TermsPage() {
       <Header />
       <main className="min-h-screen">
         <div className="mx-auto max-w-3xl px-4 py-12 sm:px-6 lg:px-8">
-          <h1 className="mb-8 text-4xl font-bold text-amber-950 dark:text-amber-50">
+          <h1 className="mb-8 text-4xl font-bold text-stone-900 dark:text-stone-50">
             Terms of Service
           </h1>
 
-          <div className="space-y-6 text-amber-900 dark:text-amber-100">
+          <div className="space-y-6 text-stone-800 dark:text-stone-100">
             <section>
-              <h2 className="mb-4 text-2xl font-semibold text-amber-950 dark:text-amber-50">
+              <h2 className="mb-4 text-2xl font-semibold text-stone-900 dark:text-stone-50">
                 1. Agreement to Terms
               </h2>
               <p>
@@ -32,7 +32,7 @@ export default function TermsPage() {
             </section>
 
             <section>
-              <h2 className="mb-4 text-2xl font-semibold text-amber-950 dark:text-amber-50">
+              <h2 className="mb-4 text-2xl font-semibold text-stone-900 dark:text-stone-50">
                 2. Use License
               </h2>
               <p className="mb-3">
@@ -49,7 +49,7 @@ export default function TermsPage() {
             </section>
 
             <section>
-              <h2 className="mb-4 text-2xl font-semibold text-amber-950 dark:text-amber-50">
+              <h2 className="mb-4 text-2xl font-semibold text-stone-900 dark:text-stone-50">
                 3. Disclaimer
               </h2>
               <p>
@@ -58,7 +58,7 @@ export default function TermsPage() {
             </section>
 
             <section>
-              <h2 className="mb-4 text-2xl font-semibold text-amber-950 dark:text-amber-50">
+              <h2 className="mb-4 text-2xl font-semibold text-stone-900 dark:text-stone-50">
                 4. Limitations
               </h2>
               <p>
@@ -67,7 +67,7 @@ export default function TermsPage() {
             </section>
 
             <section>
-              <h2 className="mb-4 text-2xl font-semibold text-amber-950 dark:text-amber-50">
+              <h2 className="mb-4 text-2xl font-semibold text-stone-900 dark:text-stone-50">
                 5. Accuracy of Materials
               </h2>
               <p>
@@ -76,7 +76,7 @@ export default function TermsPage() {
             </section>
 
             <section>
-              <h2 className="mb-4 text-2xl font-semibold text-amber-950 dark:text-amber-50">
+              <h2 className="mb-4 text-2xl font-semibold text-stone-900 dark:text-stone-50">
                 6. Materials and Links
               </h2>
               <p>
@@ -85,7 +85,7 @@ export default function TermsPage() {
             </section>
 
             <section>
-              <h2 className="mb-4 text-2xl font-semibold text-amber-950 dark:text-amber-50">
+              <h2 className="mb-4 text-2xl font-semibold text-stone-900 dark:text-stone-50">
                 7. Modifications
               </h2>
               <p>
@@ -94,7 +94,7 @@ export default function TermsPage() {
             </section>
 
             <section>
-              <h2 className="mb-4 text-2xl font-semibold text-amber-950 dark:text-amber-50">
+              <h2 className="mb-4 text-2xl font-semibold text-stone-900 dark:text-stone-50">
                 8. Governing Law
               </h2>
               <p>
@@ -103,7 +103,7 @@ export default function TermsPage() {
             </section>
 
             <section>
-              <h2 className="mb-4 text-2xl font-semibold text-amber-950 dark:text-amber-50">
+              <h2 className="mb-4 text-2xl font-semibold text-stone-900 dark:text-stone-50">
                 9. Product Information and Pricing
               </h2>
               <p className="mb-3">
@@ -120,7 +120,7 @@ export default function TermsPage() {
             </section>
 
             <section>
-              <h2 className="mb-4 text-2xl font-semibold text-amber-950 dark:text-amber-50">
+              <h2 className="mb-4 text-2xl font-semibold text-stone-900 dark:text-stone-50">
                 10. Order and Checkout
               </h2>
               <p className="mb-3">
@@ -129,7 +129,7 @@ export default function TermsPage() {
             </section>
 
             <section>
-              <h2 className="mb-4 text-2xl font-semibold text-amber-950 dark:text-amber-50">
+              <h2 className="mb-4 text-2xl font-semibold text-stone-900 dark:text-stone-50">
                 11. Shipping and Delivery
               </h2>
               <p className="mb-3">
@@ -146,7 +146,7 @@ export default function TermsPage() {
             </section>
 
             <section>
-              <h2 className="mb-4 text-2xl font-semibold text-amber-950 dark:text-amber-50">
+              <h2 className="mb-4 text-2xl font-semibold text-stone-900 dark:text-stone-50">
                 12. Returns and Refunds
               </h2>
               <p>
@@ -155,7 +155,7 @@ export default function TermsPage() {
             </section>
 
             <section>
-              <h2 className="mb-4 text-2xl font-semibold text-amber-950 dark:text-amber-50">
+              <h2 className="mb-4 text-2xl font-semibold text-stone-900 dark:text-stone-50">
                 13. User Accounts
               </h2>
               <p>
@@ -164,7 +164,7 @@ export default function TermsPage() {
             </section>
 
             <section>
-              <h2 className="mb-4 text-2xl font-semibold text-amber-950 dark:text-amber-50">
+              <h2 className="mb-4 text-2xl font-semibold text-stone-900 dark:text-stone-50">
                 14. Prohibited Activities
               </h2>
               <p className="mb-3">
@@ -181,7 +181,7 @@ export default function TermsPage() {
             </section>
 
             <section>
-              <h2 className="mb-4 text-2xl font-semibold text-amber-950 dark:text-amber-50">
+              <h2 className="mb-4 text-2xl font-semibold text-stone-900 dark:text-stone-50">
                 15. Limitation of Liability
               </h2>
               <p>
@@ -190,7 +190,7 @@ export default function TermsPage() {
             </section>
 
             <section>
-              <h2 className="mb-4 text-2xl font-semibold text-amber-950 dark:text-amber-50">
+              <h2 className="mb-4 text-2xl font-semibold text-stone-900 dark:text-stone-50">
                 16. Indemnification
               </h2>
               <p>
@@ -199,7 +199,7 @@ export default function TermsPage() {
             </section>
 
             <section>
-              <h2 className="mb-4 text-2xl font-semibold text-amber-950 dark:text-amber-50">
+              <h2 className="mb-4 text-2xl font-semibold text-stone-900 dark:text-stone-50">
                 17. Contact Us
               </h2>
               <p>
@@ -213,7 +213,7 @@ export default function TermsPage() {
               </p>
             </section>
 
-            <p className="mt-12 border-t border-amber-200 pt-8 text-sm text-amber-800 dark:border-amber-700 dark:text-amber-200">
+            <p className="mt-12 border-t border-stone-200 pt-8 text-sm text-stone-600 dark:border-stone-700 dark:text-stone-200">
               Last Updated: {new Date().toLocaleDateString("en-US", { year: "numeric", month: "long", day: "numeric" })}
             </p>
           </div>

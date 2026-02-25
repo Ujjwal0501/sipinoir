@@ -17,13 +17,13 @@ export default function AboutPage() {
       <Header />
       <main className="min-h-screen">
         <div className="mx-auto max-w-3xl px-4 py-12 sm:px-6 lg:px-8">
-          <h1 className="mb-8 text-4xl font-bold text-amber-950 dark:text-amber-50">
+          <h1 className="mb-8 text-4xl font-bold text-stone-900 dark:text-stone-50">
             About {siteConfig.name}
           </h1>
 
-          <div className="space-y-8 text-amber-900 dark:text-amber-100">
+          <div className="space-y-8 text-stone-700 dark:text-stone-300">
             <section>
-              <h2 className="mb-4 text-2xl font-semibold text-amber-950 dark:text-amber-50">
+              <h2 className="mb-4 text-2xl font-semibold text-stone-900 dark:text-stone-50">
                 Our Story
               </h2>
               <p>
@@ -40,7 +40,7 @@ export default function AboutPage() {
             </section>
 
             <section>
-              <h2 className="mb-4 text-2xl font-semibold text-amber-950 dark:text-amber-50">
+              <h2 className="mb-4 text-2xl font-semibold text-stone-900 dark:text-stone-50">
                 Our Mission
               </h2>
               <p>
@@ -52,12 +52,12 @@ export default function AboutPage() {
             </section>
 
             <section>
-              <h2 className="mb-4 text-2xl font-semibold text-amber-950 dark:text-amber-50">
+              <h2 className="mb-4 text-2xl font-semibold text-stone-900 dark:text-stone-50">
                 Our Values
               </h2>
               <div className="space-y-4">
                 <div>
-                  <h3 className="font-semibold text-amber-950 dark:text-amber-50">
+                  <h3 className="font-semibold text-stone-900 dark:text-stone-50">
                     Quality
                   </h3>
                   <p>
@@ -66,7 +66,7 @@ export default function AboutPage() {
                   </p>
                 </div>
                 <div>
-                  <h3 className="font-semibold text-amber-950 dark:text-amber-50">
+                  <h3 className="font-semibold text-stone-900 dark:text-stone-50">
                     Inclusivity
                   </h3>
                   <p>
@@ -75,7 +75,7 @@ export default function AboutPage() {
                   </p>
                 </div>
                 <div>
-                  <h3 className="font-semibold text-amber-950 dark:text-amber-50">
+                  <h3 className="font-semibold text-stone-900 dark:text-stone-50">
                     Sustainability
                   </h3>
                   <p>
@@ -84,7 +84,7 @@ export default function AboutPage() {
                   </p>
                 </div>
                 <div>
-                  <h3 className="font-semibold text-amber-950 dark:text-amber-50">
+                  <h3 className="font-semibold text-stone-900 dark:text-stone-50">
                     Customer Focus
                   </h3>
                   <p>
@@ -93,7 +93,7 @@ export default function AboutPage() {
                   </p>
                 </div>
                 <div>
-                  <h3 className="font-semibold text-amber-950 dark:text-amber-50">
+                  <h3 className="font-semibold text-stone-900 dark:text-stone-50">
                     Innovation
                   </h3>
                   <p>
@@ -105,43 +105,43 @@ export default function AboutPage() {
             </section>
 
             <section>
-              <h2 className="mb-4 text-2xl font-semibold text-amber-950 dark:text-amber-50">
+              <h2 className="mb-4 text-2xl font-semibold text-stone-900 dark:text-stone-50">
                 Why Choose Us
               </h2>
               <ul className="space-y-3">
                 <li className="flex gap-3">
-                  <span className="text-amber-950 dark:text-amber-50">✓</span>
+                  <span className="text-stone-900 dark:text-stone-50">✓</span>
                   <span>Premium quality materials and expert craftsmanship</span>
                 </li>
                 <li className="flex gap-3">
-                  <span className="text-amber-950 dark:text-amber-50">✓</span>
+                  <span className="text-stone-900 dark:text-stone-50">✓</span>
                   <span>Inclusive sizing for all body types</span>
                 </li>
                 <li className="flex gap-3">
-                  <span className="text-amber-950 dark:text-amber-50">✓</span>
+                  <span className="text-stone-900 dark:text-stone-50">✓</span>
                   <span>Stylish designs that work for any occasion</span>
                 </li>
                 <li className="flex gap-3">
-                  <span className="text-amber-950 dark:text-amber-50">✓</span>
+                  <span className="text-stone-900 dark:text-stone-50">✓</span>
                   <span>Fast and reliable shipping worldwide</span>
                 </li>
                 <li className="flex gap-3">
-                  <span className="text-amber-950 dark:text-amber-50">✓</span>
+                  <span className="text-stone-900 dark:text-stone-50">✓</span>
                   <span>Dedicated customer service team</span>
                 </li>
                 <li className="flex gap-3">
-                  <span className="text-amber-950 dark:text-amber-50">✓</span>
+                  <span className="text-stone-900 dark:text-stone-50">✓</span>
                   <span>30-day returns and satisfaction guarantee</span>
                 </li>
                 <li className="flex gap-3">
-                  <span className="text-amber-950 dark:text-amber-50">✓</span>
+                  <span className="text-stone-900 dark:text-stone-50">✓</span>
                   <span>Regular style guides and fashion tips on our blog</span>
                 </li>
               </ul>
             </section>
 
             <section>
-              <h2 className="mb-4 text-2xl font-semibold text-amber-950 dark:text-amber-50">
+              <h2 className="mb-4 text-2xl font-semibold text-stone-900 dark:text-stone-50">
                 Our Collections
               </h2>
               <p className="mb-4">
@@ -167,7 +167,7 @@ export default function AboutPage() {
             </section>
 
             <section>
-              <h2 className="mb-4 text-2xl font-semibold text-amber-950 dark:text-amber-50">
+              <h2 className="mb-4 text-2xl font-semibold text-stone-900 dark:text-stone-50">
                 Our Commitment
               </h2>
               <p>
@@ -182,8 +182,8 @@ export default function AboutPage() {
               </p>
             </section>
 
-            <section className="mt-8 rounded-lg bg-amber-100 p-6 dark:bg-amber-900/30">
-              <h2 className="mb-4 text-2xl font-semibold text-amber-950 dark:text-amber-50">
+            <section className="mt-8 rounded-lg bg-stone-100 p-6 dark:bg-stone-800/40">
+              <h2 className="mb-4 text-2xl font-semibold text-stone-900 dark:text-stone-50">
                 Get in Touch
               </h2>
               <p>
@@ -192,7 +192,7 @@ export default function AboutPage() {
               <p className="mt-3">
                 <a
                   href="/contact"
-                  className="font-semibold text-amber-950 hover:text-amber-700 dark:text-amber-100 dark:hover:text-amber-200"
+                  className="font-semibold text-stone-900 hover:text-stone-700 dark:text-stone-100 dark:hover:text-stone-200"
                 >
                   Contact us today →
                 </a>

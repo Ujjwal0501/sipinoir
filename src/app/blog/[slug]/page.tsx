@@ -92,12 +92,12 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
       <Header />
-      <main id="main-content" className="min-h-screen bg-white">
+      <main id="main-content" className="min-h-screen bg-stone-50">
         {/* Back Link */}
         <div className="container mx-auto max-w-4xl px-4 pt-8">
           <Link
             href="/blog"
-            className="inline-flex items-center text-neutral-600 hover:text-neutral-900 transition-colors"
+            className="inline-flex items-center text-stone-500 hover:text-stone-900 transition-colors"
           >
             ← Back to Blog
           </Link>
@@ -106,8 +106,8 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
         {/* Article Header */}
         <article className="container mx-auto max-w-4xl px-4 py-12">
           <header className="mb-8">
-            <div className="flex flex-wrap items-center gap-3 mb-4 text-sm text-neutral-600">
-              <span className="bg-neutral-100 px-3 py-1 rounded-full font-medium">
+            <div className="flex flex-wrap items-center gap-3 mb-4 text-sm text-stone-500">
+              <span className="bg-stone-100 px-3 py-1 rounded-full font-medium">
                 {post.category}
               </span>
               <time dateTime={post.date}>
@@ -121,18 +121,18 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
               <span>{post.readingTime}</span>
             </div>
 
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-neutral-900 mb-4">
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-stone-900 mb-4">
               {post.title}
             </h1>
 
-            <p className="text-xl text-neutral-600 mb-6">{post.excerpt}</p>
+            <p className="text-xl text-stone-600 mb-6">{post.excerpt}</p>
 
             <div className="flex items-center gap-3">
-              <div className="w-12 h-12 bg-neutral-800 rounded-full flex items-center justify-center text-white font-bold">
+              <div className="w-12 h-12 bg-stone-800 rounded-full flex items-center justify-center text-white font-bold">
                 {post.author.substring(0, 2).toUpperCase()}
               </div>
               <div>
-                <p className="font-medium text-neutral-900">{post.author}</p>
+                <p className="font-medium text-stone-900">{post.author}</p>
               </div>
             </div>
           </header>
@@ -151,32 +151,32 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
 
           {/* Article Content */}
           <div
-            className="prose prose-neutral prose-lg max-w-none
-              prose-headings:font-bold prose-headings:text-neutral-900
+            className="prose prose-stone prose-lg max-w-none
+              prose-headings:font-bold prose-headings:text-stone-900
               prose-h2:text-3xl prose-h2:mt-12 prose-h2:mb-6
               prose-h3:text-2xl prose-h3:mt-8 prose-h3:mb-4
-              prose-p:text-neutral-700 prose-p:leading-relaxed prose-p:mb-6
-              prose-a:text-neutral-900 prose-a:underline hover:prose-a:text-neutral-600
-              prose-strong:text-neutral-900 prose-strong:font-bold
+              prose-p:text-stone-700 prose-p:leading-relaxed prose-p:mb-6
+              prose-a:text-stone-900 prose-a:underline hover:prose-a:text-stone-600
+              prose-strong:text-stone-900 prose-strong:font-bold
               prose-ul:my-6 prose-ol:my-6
-              prose-li:text-neutral-700 prose-li:my-2
-              prose-blockquote:border-l-4 prose-blockquote:border-neutral-300
-              prose-blockquote:pl-6 prose-blockquote:italic prose-blockquote:text-neutral-600
-              prose-code:bg-neutral-100 prose-code:px-1.5 prose-code:py-0.5
-              prose-code:rounded prose-code:text-sm prose-code:text-neutral-900
-              prose-pre:bg-neutral-900 prose-pre:text-neutral-100
+              prose-li:text-stone-700 prose-li:my-2
+              prose-blockquote:border-l-4 prose-blockquote:border-stone-300
+              prose-blockquote:pl-6 prose-blockquote:italic prose-blockquote:text-stone-600
+              prose-code:bg-stone-100 prose-code:px-1.5 prose-code:py-0.5
+              prose-code:rounded prose-code:text-sm prose-code:text-stone-900
+              prose-pre:bg-stone-900 prose-pre:text-stone-100
               prose-img:rounded-lg prose-img:shadow-md"
             dangerouslySetInnerHTML={{ __html: post.content }}
           />
 
           {/* Tags */}
           {post.tags.length > 0 && (
-            <div className="mt-12 pt-8 border-t border-neutral-200">
+            <div className="mt-12 pt-8 border-t border-stone-200">
               <div className="flex flex-wrap gap-2">
                 {post.tags.map((tag) => (
                   <span
                     key={tag}
-                    className="bg-neutral-100 text-neutral-700 px-3 py-1 rounded-full text-sm"
+                    className="bg-stone-100 text-stone-700 px-3 py-1 rounded-full text-sm"
                   >
                     #{tag}
                   </span>
@@ -186,10 +186,10 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
           )}
 
           {/* Back to Blog */}
-          <div className="mt-12 pt-8 border-t border-neutral-200">
+          <div className="mt-12 pt-8 border-t border-stone-200">
             <Link
               href="/blog"
-              className="inline-flex items-center text-neutral-600 hover:text-neutral-900 transition-colors font-medium"
+              className="inline-flex items-center text-stone-500 hover:text-stone-900 transition-colors font-medium"
             >
               ← Back to all posts
             </Link>

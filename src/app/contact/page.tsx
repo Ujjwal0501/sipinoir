@@ -49,10 +49,10 @@ export default function ContactPage() {
       <Header />
       <main className="min-h-screen">
         <div className="mx-auto max-w-4xl px-4 py-12 sm:px-6 lg:px-8">
-          <h1 className="mb-4 text-4xl font-bold text-amber-950 dark:text-amber-50">
+          <h1 className="mb-4 text-4xl font-bold text-stone-900 dark:text-stone-50">
             Contact Us
           </h1>
-          <p className="mb-12 text-lg text-amber-900 dark:text-amber-100">
+          <p className="mb-12 text-lg text-stone-800 dark:text-stone-100">
             We'd love to hear from you! Whether you have questions about our
             products, feedback, or just want to say hello, feel free to reach out.
           </p>
@@ -60,7 +60,7 @@ export default function ContactPage() {
           <div className="grid gap-12 lg:grid-cols-3">
             {/* Contact Form */}
             <div className="lg:col-span-2">
-              <div className="rounded-lg bg-amber-50 p-8 dark:bg-amber-900/20">
+              <div className="rounded-lg bg-stone-50 p-8 dark:bg-stone-800/20">
                 {submitted && (
                   <div className="mb-6 rounded-lg bg-green-100 p-4 text-green-800 dark:bg-green-900/30 dark:text-green-200">
                     <p className="font-semibold">Thank you for your message!</p>
@@ -74,7 +74,7 @@ export default function ContactPage() {
                   <div>
                     <label
                       htmlFor="name"
-                      className="block text-sm font-medium text-amber-950 dark:text-amber-100"
+                      className="block text-sm font-medium text-stone-900 dark:text-stone-100"
                     >
                       Name
                     </label>
@@ -85,7 +85,7 @@ export default function ContactPage() {
                       value={formData.name}
                       onChange={handleChange}
                       required
-                      className="mt-1 w-full rounded-lg border border-amber-200 bg-white px-4 py-2 text-amber-950 placeholder-amber-400 focus:border-amber-500 focus:outline-none dark:border-amber-700 dark:bg-amber-950/50 dark:text-amber-50 dark:placeholder-amber-600"
+                      className="mt-1 w-full rounded-lg border border-stone-200 bg-white px-4 py-2 text-stone-900 placeholder-stone-400 focus:border-stone-500 focus:outline-none dark:border-stone-700 dark:bg-stone-900/50 dark:text-stone-50 dark:placeholder-stone-600"
                       placeholder="Your name"
                     />
                   </div>
@@ -93,7 +93,7 @@ export default function ContactPage() {
                   <div>
                     <label
                       htmlFor="email"
-                      className="block text-sm font-medium text-amber-950 dark:text-amber-100"
+                      className="block text-sm font-medium text-stone-900 dark:text-stone-100"
                     >
                       Email Address
                     </label>
@@ -104,7 +104,7 @@ export default function ContactPage() {
                       value={formData.email}
                       onChange={handleChange}
                       required
-                      className="mt-1 w-full rounded-lg border border-amber-200 bg-white px-4 py-2 text-amber-950 placeholder-amber-400 focus:border-amber-500 focus:outline-none dark:border-amber-700 dark:bg-amber-950/50 dark:text-amber-50 dark:placeholder-amber-600"
+                      className="mt-1 w-full rounded-lg border border-stone-200 bg-white px-4 py-2 text-stone-900 placeholder-stone-400 focus:border-stone-500 focus:outline-none dark:border-stone-700 dark:bg-stone-900/50 dark:text-stone-50 dark:placeholder-stone-600"
                       placeholder="your.email@example.com"
                     />
                   </div>
@@ -112,7 +112,7 @@ export default function ContactPage() {
                   <div>
                     <label
                       htmlFor="subject"
-                      className="block text-sm font-medium text-amber-950 dark:text-amber-100"
+                      className="block text-sm font-medium text-stone-900 dark:text-stone-100"
                     >
                       Subject
                     </label>
@@ -123,7 +123,7 @@ export default function ContactPage() {
                       value={formData.subject}
                       onChange={handleChange}
                       required
-                      className="mt-1 w-full rounded-lg border border-amber-200 bg-white px-4 py-2 text-amber-950 placeholder-amber-400 focus:border-amber-500 focus:outline-none dark:border-amber-700 dark:bg-amber-950/50 dark:text-amber-50 dark:placeholder-amber-600"
+                      className="mt-1 w-full rounded-lg border border-stone-200 bg-white px-4 py-2 text-stone-900 placeholder-stone-400 focus:border-stone-500 focus:outline-none dark:border-stone-700 dark:bg-stone-900/50 dark:text-stone-50 dark:placeholder-stone-600"
                       placeholder="How can we help?"
                     />
                   </div>
@@ -131,7 +131,7 @@ export default function ContactPage() {
                   <div>
                     <label
                       htmlFor="message"
-                      className="block text-sm font-medium text-amber-950 dark:text-amber-100"
+                      className="block text-sm font-medium text-stone-900 dark:text-stone-100"
                     >
                       Message
                     </label>
@@ -142,7 +142,7 @@ export default function ContactPage() {
                       onChange={handleChange}
                       required
                       rows={6}
-                      className="mt-1 w-full rounded-lg border border-amber-200 bg-white px-4 py-2 text-amber-950 placeholder-amber-400 focus:border-amber-500 focus:outline-none dark:border-amber-700 dark:bg-amber-950/50 dark:text-amber-50 dark:placeholder-amber-600"
+                      className="mt-1 w-full rounded-lg border border-stone-200 bg-white px-4 py-2 text-stone-900 placeholder-stone-400 focus:border-stone-500 focus:outline-none dark:border-stone-700 dark:bg-stone-900/50 dark:text-stone-50 dark:placeholder-stone-600"
                       placeholder="Tell us what's on your mind..."
                     ></textarea>
                   </div>
@@ -150,7 +150,7 @@ export default function ContactPage() {
                   <button
                     type="submit"
                     disabled={isLoading}
-                    className="w-full rounded-lg bg-amber-900 px-6 py-3 font-medium text-amber-50 transition-colors hover:bg-amber-800 disabled:opacity-50 dark:bg-amber-100 dark:text-amber-900 dark:hover:bg-amber-200"
+                    className="w-full rounded-lg bg-stone-800 px-6 py-3 font-medium text-stone-50 transition-colors hover:bg-stone-600 disabled:opacity-50 dark:bg-stone-100 dark:text-stone-800 dark:hover:bg-stone-200"
                   >
                     {isLoading ? "Sending..." : "Send Message"}
                   </button>
@@ -161,33 +161,33 @@ export default function ContactPage() {
             {/* Contact Information */}
             <div className="space-y-8">
               <div>
-                <h3 className="mb-3 text-lg font-semibold text-amber-950 dark:text-amber-50">
+                <h3 className="mb-3 text-lg font-semibold text-stone-900 dark:text-stone-50">
                   Email
                 </h3>
-                <p className="text-amber-900 dark:text-amber-100">
+                <p className="text-stone-800 dark:text-stone-100">
                   <a
                     href="mailto:support@example.com"
-                    className="hover:text-amber-700 dark:hover:text-amber-200"
+                    className="hover:text-stone-700 dark:hover:text-stone-200"
                   >
                     support@{siteConfig.url.replace("https://", "").replace("http://", "")}
                   </a>
                 </p>
-                <p className="mt-2 text-sm text-amber-800 dark:text-amber-200">
+                <p className="mt-2 text-sm text-stone-600 dark:text-stone-200">
                   We'll respond within 24 hours
                 </p>
               </div>
 
               <div>
-                <h3 className="mb-3 text-lg font-semibold text-amber-950 dark:text-amber-50">
+                <h3 className="mb-3 text-lg font-semibold text-stone-900 dark:text-stone-50">
                   Customer Support
                 </h3>
-                <p className="text-amber-900 dark:text-amber-100">
+                <p className="text-stone-800 dark:text-stone-100">
                   For order inquiries and returns
                 </p>
-                <p className="mt-2 text-sm text-amber-800 dark:text-amber-200">
+                <p className="mt-2 text-sm text-stone-600 dark:text-stone-200">
                   <a
                     href="mailto:orders@example.com"
-                    className="hover:text-amber-700 dark:hover:text-amber-200"
+                    className="hover:text-stone-700 dark:hover:text-stone-200"
                   >
                     orders@{siteConfig.url.replace("https://", "").replace("http://", "")}
                   </a>
@@ -195,16 +195,16 @@ export default function ContactPage() {
               </div>
 
               <div>
-                <h3 className="mb-3 text-lg font-semibold text-amber-950 dark:text-amber-50">
+                <h3 className="mb-3 text-lg font-semibold text-stone-900 dark:text-stone-50">
                   Business Inquiries
                 </h3>
-                <p className="text-amber-900 dark:text-amber-100">
+                <p className="text-stone-800 dark:text-stone-100">
                   For partnerships and wholesale
                 </p>
-                <p className="mt-2 text-sm text-amber-800 dark:text-amber-200">
+                <p className="mt-2 text-sm text-stone-600 dark:text-stone-200">
                   <a
                     href="mailto:business@example.com"
-                    className="hover:text-amber-700 dark:hover:text-amber-200"
+                    className="hover:text-stone-700 dark:hover:text-stone-200"
                   >
                     business@{siteConfig.url.replace("https://", "").replace("http://", "")}
                   </a>
@@ -212,28 +212,28 @@ export default function ContactPage() {
               </div>
 
               <div>
-                <h3 className="mb-3 text-lg font-semibold text-amber-950 dark:text-amber-50">
+                <h3 className="mb-3 text-lg font-semibold text-stone-900 dark:text-stone-50">
                   Office Hours
                 </h3>
-                <div className="space-y-1 text-sm text-amber-900 dark:text-amber-100">
+                <div className="space-y-1 text-sm text-stone-800 dark:text-stone-100">
                   <p>Monday - Friday: 9:00 AM - 6:00 PM</p>
                   <p>Saturday: 10:00 AM - 4:00 PM</p>
                   <p>Sunday: Closed</p>
-                  <p className="mt-2 text-amber-800 dark:text-amber-200">
+                  <p className="mt-2 text-stone-600 dark:text-stone-200">
                     (All times in EST)
                   </p>
                 </div>
               </div>
 
-              <div className="rounded-lg bg-amber-100 p-4 dark:bg-amber-900/30">
-                <h3 className="mb-2 font-semibold text-amber-950 dark:text-amber-50">
+              <div className="rounded-lg bg-stone-100 p-4 dark:bg-stone-800/30">
+                <h3 className="mb-2 font-semibold text-stone-900 dark:text-stone-50">
                   Quick Help
                 </h3>
-                <ul className="space-y-2 text-sm text-amber-900 dark:text-amber-100">
+                <ul className="space-y-2 text-sm text-stone-800 dark:text-stone-100">
                   <li>
                     <a
                       href="/blog"
-                      className="hover:text-amber-700 dark:hover:text-amber-200"
+                      className="hover:text-stone-700 dark:hover:text-stone-200"
                     >
                       → Read our blog
                     </a>
@@ -241,7 +241,7 @@ export default function ContactPage() {
                   <li>
                     <a
                       href="/privacy"
-                      className="hover:text-amber-700 dark:hover:text-amber-200"
+                      className="hover:text-stone-700 dark:hover:text-stone-200"
                     >
                       → Privacy Policy
                     </a>
@@ -249,7 +249,7 @@ export default function ContactPage() {
                   <li>
                     <a
                       href="/terms"
-                      className="hover:text-amber-700 dark:hover:text-amber-200"
+                      className="hover:text-stone-700 dark:hover:text-stone-200"
                     >
                       → Terms of Service
                     </a>

@@ -54,14 +54,14 @@ export default function HeroSection() {
           >
             Elevate Your Style
           </h1>
-          <p className="mx-auto max-w-2xl text-lg leading-8 text-gray-100 mb-8">
+          <p className="mx-auto max-w-2xl text-lg leading-8 text-stone-200 mb-8">
             {siteConfig.tagline}
           </p>
 
           {/* CTA Button */}
           <Link
             href="/shop"
-            className="inline-block rounded-full bg-white px-8 py-3 text-sm font-semibold text-slate-900 shadow-lg transition-all hover:bg-gray-100 hover:shadow-xl focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
+            className="inline-block rounded-full bg-stone-100 px-8 py-3 text-sm font-semibold text-stone-900 shadow-lg transition-all hover:bg-white hover:shadow-xl focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-stone-100"
           >
             Buy
           </Link>
