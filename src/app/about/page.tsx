@@ -127,41 +127,7 @@ export default function AboutPage() {
                 </li>
                 <li className="flex gap-3">
                   <span className="text-stone-900 dark:text-stone-50">✓</span>
-                  <span>Dedicated customer service team</span>
-                </li>
-                <li className="flex gap-3">
-                  <span className="text-stone-900 dark:text-stone-50">✓</span>
-                  <span>30-day returns and satisfaction guarantee</span>
-                </li>
-                <li className="flex gap-3">
-                  <span className="text-stone-900 dark:text-stone-50">✓</span>
                   <span>Regular style guides and fashion tips on our blog</span>
-                </li>
-              </ul>
-            </section>
-
-            <section>
-              <h2 className="mb-4 text-2xl font-semibold text-stone-900 dark:text-stone-50">
-                Our Collections
-              </h2>
-              <p className="mb-4">
-                We offer carefully curated collections to suit every style and season:
-              </p>
-              <ul className="list-inside list-disc space-y-2 pl-4">
-                <li>
-                  <strong>Classic Collection:</strong> Timeless styles that never go out of fashion
-                </li>
-                <li>
-                  <strong>Modern Collection:</strong> Contemporary designs for the fashion-forward
-                </li>
-                <li>
-                  <strong>Seasonal Collection:</strong> Limited edition pieces released each season
-                </li>
-                <li>
-                  <strong>Premium Collection:</strong> Luxury jackets made from the finest materials
-                </li>
-                <li>
-                  <strong>Sustainable Collection:</strong> Eco-friendly options that look good and feel good
                 </li>
               </ul>
             </section>
