@@ -9,7 +9,9 @@ import { siteConfig } from "@/lib/seo";
 import { getAllPosts } from "@/lib/blog";
 
 export const metadata: Metadata = {
-  title: `${siteConfig.name} — ${siteConfig.tagline}`,
+  title: {
+    absolute: "Premium Men's Jackets – All Types of Jackets | Sipi Noir",
+  },
   description: siteConfig.description,
   alternates: {
     canonical: siteConfig.url,
