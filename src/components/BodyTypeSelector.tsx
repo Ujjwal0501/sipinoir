@@ -9,8 +9,8 @@ const bodyTypes = [
     label: "Rectangle",
     image: "/images/body-rectangle.png",
     recommendations: [
-      { title: "Relaxed Fit Coat", image: "/images/r1.png" },
-      { title: "Hooded Jacket", image: "/images/r2.png" },
+      { title: "Straight-Cut Jacket", image: "/images/r1.png" },
+      { title: "Classic Blazer", image: "/images/r2.png" },
     ],
   },
   {
@@ -27,8 +27,8 @@ const bodyTypes = [
     label: "Oval",
     image: "/images/body-oval.png",
     recommendations: [
-      { title: "Relaxed Fit Coat", image: "/images/o1.png" },
-      { title: "Soft Shell Jacket", image: "/images/o2.png" },
+      { title: "Structured Jacket", image: "/images/o1.png" },
+      { title: "Layered Blazzer", image: "/images/o2.png" },
     ],
   },
   {
@@ -36,8 +36,8 @@ const bodyTypes = [
     label: "Trapezoid",
     image: "/images/body-trapezoid.png",
     recommendations: [
-      { title: "Utility Jacket", image: "/images/tz1.png" },
-      { title: "Field Coat", image: "/images/tz2.png" },
+      { title: "Fitted Jacket", image: "/images/tz1.png" },
+      { title: "Biker Jacket", image: "/images/tz2.png" },
     ],
   },
   {
@@ -45,8 +45,8 @@ const bodyTypes = [
     label: "Athletic",
     image: "/images/body-athletic.png",
     recommendations: [
-      { title: "Structured Blazer", image: "/images/a1.png" },
-      { title: "Tailored Bomber", image: "/images/a2.png" },
+      { title: "Bomber Jacket", image: "/images/a1.png" },
+      { title: "Moto Jacket", image: "/images/a2.png" },
     ],
   },
 ];

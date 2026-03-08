@@ -1,18 +1,17 @@
 "use client";
 
-import Image from "next/image";
 import Link from "next/link";
 
 const products = [
   {
-    image: "/images/jacket-1.webp",
+    video: "/videos/HB_Left.m4v",
     alt: "Training Jacket",
     title: "Training Jacket",
     description: "Engineered for movement and everyday performance.",
     buyLink: "https://shop.sipinoir.com/collections/latest-launch",
   },
   {
-    image: "/images/jacket-2.webp",
+    video: "/videos/HB_Right.m4v",
     alt: "Windcheater",
     title: "Windcheater",
     description: "Lightweight protection built for urban style.",
@@ -34,15 +33,19 @@ export default function HeroSection() {
           key={product.title}
           className="relative overflow-hidden h-[500px] sm:h-[700px] lg:h-[800px] group"
         >
-          <Image
-            src={product.image}
-            alt={product.alt}
-            fill
-            className="object-cover transition-transform duration-500 group-hover:scale-105"
-            priority
-          />
+          <video
+            className="absolute inset-0 h-full w-full object-cover transition-transform group-hover:scale-105"
+            autoPlay
+            loop
+            muted
+            playsInline
+            preload="metadata"
+            aria-label={product.alt}
+          >
+            <source src={product.video} type="video/mp4" />
+          </video>
           <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent" />
-          <div className="absolute bottom-0 left-0 right-0 p-8 text-white">
+          <div className="absolute bottom-0 left-0 right-0 p-8 text-white text-center flex flex-col items-center">
             <h2 className="text-3xl font-bold tracking-tight mb-2">
               {product.title}
             </h2>

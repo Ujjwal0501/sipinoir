@@ -1,5 +1,7 @@
 @import "tailwindcss";
 @plugin "@tailwindcss/typography";
+/* Temporarily disabled dark theme */
+@custom-variant dark (&:where(.dark, .dark *));
 
 :root {
   --background: #f8f6f2;
@@ -14,12 +16,12 @@
   --font-serif: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
 }
 
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
   :root {
     --background: #141210;
     --foreground: #f0ece6;
   }
-}
+} */
 
 body {
   background: var(--background);

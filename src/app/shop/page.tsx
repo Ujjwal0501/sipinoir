@@ -12,7 +12,7 @@ export default function ShopPage() {
     const shopUrl = `https://shop.sipinoir.com/collections/latest-launch`;
     const timer = setTimeout(() => {
       window.location.href = shopUrl;
-    }, 2000);
+    }, 1);
 
     return () => clearTimeout(timer);
   }, []);
