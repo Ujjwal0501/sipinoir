@@ -1,5 +1,6 @@
 export const siteConfig = {
   name: "Sipi & Noir",
+  metaTitle: "Premium Men's Jackets – All Types of Jackets",
   tagline: "Premium Jackets for Men",
   description:
     "Discover premium lightweight jackets for men. Training jackets and windcheaters engineered for movement, comfort, and everyday urban style.",
