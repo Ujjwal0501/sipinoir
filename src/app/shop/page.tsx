@@ -9,15 +9,15 @@ import { siteConfig } from "@/lib/seo";
 
 export default function ShopPage() {
   useEffect(() => {
-    const shopUrl = `https://shop.${new URL(siteConfig.url).hostname}`;
+    const shopUrl = `https://shop.sipinoir.com/collections/latest-launch`;
     const timer = setTimeout(() => {
       window.location.href = shopUrl;
-    }, 2000);
+    }, 1);
 
     return () => clearTimeout(timer);
   }, []);
 
-  const shopDomain = `https://shop.${new URL(siteConfig.url).hostname}`;
+  const shopDomain = `https://shop.sipinoir.com/collections/latest-launch`;
 
   return (
     <div className="min-h-screen flex items-center justify-center bg-stone-50">

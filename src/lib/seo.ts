@@ -1,8 +1,8 @@
 export const siteConfig = {
   name: "Sipi & Noir",
-  tagline: "Premium Jackets for Every Adventure",
+  tagline: "Premium Jackets for Men",
   description:
-    "Sipinoir crafts premium jackets and outerwear designed for style, comfort, and durability. Explore our collection of modern, functional jackets perfect for urban life and outdoor adventures.",
+    "Discover premium lightweight jackets for men. Training jackets and windcheaters engineered for movement, comfort, and everyday urban style.",
   url: "https://sipinoir.com",
   ogImage: "/images/og-image.svg",
   logo: "/logo.png",

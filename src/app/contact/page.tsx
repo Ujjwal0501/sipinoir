@@ -179,27 +179,10 @@ export default function ContactPage() {
 
               <div>
                 <h3 className="mb-3 text-lg font-semibold text-stone-900 dark:text-stone-50">
-                  Customer Support
-                </h3>
-                <p className="text-stone-800 dark:text-stone-100">
-                  For order inquiries and returns
-                </p>
-                <p className="mt-2 text-sm text-stone-600 dark:text-stone-200">
-                  <a
-                    href="mailto:orders@example.com"
-                    className="hover:text-stone-700 dark:hover:text-stone-200"
-                  >
-                    orders@{siteConfig.url.replace("https://", "").replace("http://", "")}
-                  </a>
-                </p>
-              </div>
-
-              <div>
-                <h3 className="mb-3 text-lg font-semibold text-stone-900 dark:text-stone-50">
                   Business Inquiries
                 </h3>
                 <p className="text-stone-800 dark:text-stone-100">
-                  For partnerships and wholesale
+                  For partnership and Bulk/Corporate Order
                 </p>
                 <p className="mt-2 text-sm text-stone-600 dark:text-stone-200">
                   <a
@@ -209,20 +192,6 @@ export default function ContactPage() {
                     business@{siteConfig.url.replace("https://", "").replace("http://", "")}
                   </a>
                 </p>
-              </div>
-
-              <div>
-                <h3 className="mb-3 text-lg font-semibold text-stone-900 dark:text-stone-50">
-                  Office Hours
-                </h3>
-                <div className="space-y-1 text-sm text-stone-800 dark:text-stone-100">
-                  <p>Monday - Friday: 9:00 AM - 6:00 PM</p>
-                  <p>Saturday: 10:00 AM - 4:00 PM</p>
-                  <p>Sunday: Closed</p>
-                  <p className="mt-2 text-stone-600 dark:text-stone-200">
-                    (All times in EST)
-                  </p>
-                </div>
               </div>
 
               <div className="rounded-lg bg-stone-100 p-4 dark:bg-stone-800/30">
