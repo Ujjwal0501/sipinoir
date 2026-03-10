@@ -1,5 +1,6 @@
 "use client";
 
+import NextVideo from "next-video";
 import Link from "next/link";
 
 const products = [
@@ -8,14 +9,14 @@ const products = [
     alt: "Training Jacket",
     title: "Training Jacket",
     description: "Engineered for movement and everyday performance.",
-    buyLink: "https://shop.sipinoir.com/collections/latest-launch",
+    buyLink: "https://shop.sipinoir.com/products/mumbai-training-jacket",
   },
   {
     video: "/videos/HB_Right.m4v",
     alt: "Windcheater",
     title: "Windcheater",
     description: "Lightweight protection built for urban style.",
-    buyLink: "https://shop.sipinoir.com/collections/latest-launch",
+    buyLink: "https://shop.sipinoir.com/products/bengaluru-black-white-windcheater-jacket",
   },
 ];
 
@@ -33,17 +34,17 @@ export default function HeroSection() {
           key={product.title}
           className="relative overflow-hidden h-[500px] sm:h-[700px] lg:h-[800px] group"
         >
-          <video
+          <NextVideo
             className="absolute inset-0 h-full w-full object-cover transition-transform group-hover:scale-105"
+            src={product.video}
             autoPlay
             loop
             muted
             playsInline
+            controls={false}
             preload="metadata"
             aria-label={product.alt}
-          >
-            <source src={product.video} type="video/mp4" />
-          </video>
+          />
           <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent" />
           <div className="absolute bottom-0 left-0 right-0 p-8 text-white text-center flex flex-col items-center">
             <h2 className="text-3xl font-bold tracking-tight mb-2">
