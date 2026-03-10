@@ -5,4 +5,4 @@ const nextConfig: NextConfig = {
   /* config options here */
 };
 
-export default withNextVideo(nextConfig);
+export default withNextVideo(nextConfig, {folder: "public/videos"});

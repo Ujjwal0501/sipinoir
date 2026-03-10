@@ -5,14 +5,14 @@ import Link from "next/link";
 
 const products = [
   {
-    video: "/videos/HB_Left.m4v",
+    video: "public/videos/HB_Left.m4v",
     alt: "Training Jacket",
     title: "Training Jacket",
     description: "Engineered for movement and everyday performance.",
     buyLink: "https://shop.sipinoir.com/products/mumbai-training-jacket",
   },
   {
-    video: "/videos/HB_Right.m4v",
+    video: "public/videos/HB_Right.m4v",
     alt: "Windcheater",
     title: "Windcheater",
     description: "Lightweight protection built for urban style.",
