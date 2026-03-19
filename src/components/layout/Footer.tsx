@@ -14,6 +14,9 @@ const footerLinks = {
   Legal: [
     { href: "/privacy", label: "Privacy Policy" },
     { href: "/terms", label: "Terms of Service" },
+    { href: "/refund_policy", label: "Refund Policy" },
+    { href: "/shipping_policy", label: "Shipping Policy" },
+    { href: "/return_policy", label: "Return Policy" },
   ],
 };
 
@@ -25,16 +28,13 @@ export default function Footer() {
           <div className="col-span-2 md:col-span-1">
             <Link href="/" aria-label={siteConfig.name}>
               <Image
-                src={siteConfig.logo}
+                src={siteConfig.logoWithText}
                 alt={`${siteConfig.name} logo`}
                 width={120}
                 height={36}
                 className="dark:invert"
               />
             </Link>
-            <p className="mt-4 text-sm text-stone-600 dark:text-stone-300">
-              {siteConfig.tagline}
-            </p>
           </div>
           {Object.entries(footerLinks).map(([group, links]) => (
             <div key={group}>

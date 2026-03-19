@@ -7,6 +7,7 @@ export const siteConfig = {
   url: "https://sipinoir.com",
   ogImage: "/images/og-image.svg",
   logo: "/logo.png",
+  logoWithText: "/tagline.png",
   twitterHandle: "@sipinoir",
   keywords: [
     "jacket",
