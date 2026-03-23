@@ -8,6 +8,7 @@ export const siteConfig = {
   ogImage: "/images/og-image.svg",
   logo: "/logo.png",
   logoWithText: "/tagline.png",
+  address: "Sy No 97/98, Adur Village, Virgonagar Post Biderahalli Hobli, Bidarahalli, Bengaluru, Karnataka, 560049",
   twitterHandle: "@sipinoir",
   keywords: [
     "jacket",

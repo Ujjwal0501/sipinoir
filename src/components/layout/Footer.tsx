@@ -35,6 +35,12 @@ export default function Footer() {
                 className="dark:invert"
               />
             </Link>
+            <h3 className="mt-4 text-xs font-semibold uppercase tracking-wider text-stone-900 dark:text-stone-100">
+              Address
+            </h3>
+            <p className="mt-2 text-sm text-stone-600 dark:text-stone-400">
+              {siteConfig.address}
+            </p>
           </div>
           {Object.entries(footerLinks).map(([group, links]) => (
             <div key={group}>
