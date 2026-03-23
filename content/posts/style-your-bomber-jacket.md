@@ -2,7 +2,7 @@
 title: "5 Ways to Style Your Bomber Jacket This Season"
 date: "2026-02-15"
 excerpt: "The bomber jacket is a timeless wardrobe staple. Discover five versatile looks that take you from casual weekends to elevated evening wear."
-author: "Emma Richardson"
+author: "Sipi & Noir Team"
 category: "Style Guide"
 tags: ["styling", "bomber jacket", "fashion", "trends"]
 featured: true
