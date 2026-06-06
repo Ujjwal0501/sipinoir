@@ -27,7 +27,7 @@ export default function TermsPage() {
                 1. Agreement to Terms
               </h2>
               <p>
-                By accessing and using {siteConfig.name}'s website and services, you accept and agree to be bound by and abide by the terms and condition of this agreement. If you do not agree to abide by the above, please do not use this service. We reserve the right to review and revise these terms at any time.
+                By accessing and using {siteConfig.name}&apos;s website and services, you accept and agree to be bound by and abide by the terms and condition of this agreement. If you do not agree to abide by the above, please do not use this service. We reserve the right to review and revise these terms at any time.
               </p>
             </section>
 
@@ -36,14 +36,14 @@ export default function TermsPage() {
                 2. Use License
               </h2>
               <p className="mb-3">
-                Permission is granted to temporarily download one copy of the materials (information or software) on {siteConfig.name}'s website for personal, non-commercial transitory viewing only. This is the grant of a license, not a transfer of title, and under this license you may not:
+                Permission is granted to temporarily download one copy of the materials (information or software) on {siteConfig.name}&apos;s website for personal, non-commercial transitory viewing only. This is the grant of a license, not a transfer of title, and under this license you may not:
               </p>
               <ul className="list-inside list-disc space-y-2 pl-4">
                 <li>Modifying or copying the materials</li>
                 <li>Using the materials for any commercial purpose or for any public display</li>
                 <li>Attempting to decompile or reverse engineer any software contained on the website</li>
                 <li>Removing any copyright or other proprietary notations from the materials</li>
-                <li>Transferring the materials to another person or "mirroring" the materials on any other server</li>
+                <li>Transferring the materials to another person or &quot;mirroring&quot; the materials on any other server</li>
                 <li>Accessing or using the website or its content for any purpose other than personal, non-commercial use</li>
               </ul>
             </section>
@@ -53,7 +53,7 @@ export default function TermsPage() {
                 3. Disclaimer
               </h2>
               <p>
-                The materials on {siteConfig.name}'s website are provided "as is". {siteConfig.name} makes no warranties, expressed or implied, and hereby disclaims and negates all other warranties including, without limitation, implied warranties or conditions of merchantability, fitness for a particular purpose, or non-infringement of intellectual property or other violation of rights.
+                The materials on {siteConfig.name}&apos;s website are provided &quot;as is&quot;. {siteConfig.name} makes no warranties, expressed or implied, and hereby disclaims and negates all other warranties including, without limitation, implied warranties or conditions of merchantability, fitness for a particular purpose, or non-infringement of intellectual property or other violation of rights.
               </p>
             </section>
 
@@ -62,7 +62,7 @@ export default function TermsPage() {
                 4. Limitations
               </h2>
               <p>
-                In no event shall {siteConfig.name} or its suppliers be liable for any damages (including, without limitation, damages for loss of data or profit, or due to business interruption) arising out of the use or inability to use the materials on {siteConfig.name}'s website, even if {siteConfig.name} or an authorized representative has been notified orally or in writing of the possibility of such damage.
+                In no event shall {siteConfig.name} or its suppliers be liable for any damages (including, without limitation, damages for loss of data or profit, or due to business interruption) arising out of the use or inability to use the materials on {siteConfig.name}&apos;s website, even if {siteConfig.name} or an authorized representative has been notified orally or in writing of the possibility of such damage.
               </p>
             </section>
 
@@ -71,7 +71,7 @@ export default function TermsPage() {
                 5. Accuracy of Materials
               </h2>
               <p>
-                The materials appearing on {siteConfig.name}'s website could include technical, typographical, or photographic errors. {siteConfig.name} does not warrant that any of the materials on its website are accurate, complete, or current. {siteConfig.name} may make changes to the materials contained on its website at any time without notice.
+                The materials appearing on {siteConfig.name}&apos;s website could include technical, typographical, or photographic errors. {siteConfig.name} does not warrant that any of the materials on its website are accurate, complete, or current. {siteConfig.name} may make changes to the materials contained on its website at any time without notice.
               </p>
             </section>
 
@@ -80,7 +80,7 @@ export default function TermsPage() {
                 6. Materials and Links
               </h2>
               <p>
-                {siteConfig.name} has not reviewed all of the sites linked to its website and is not responsible for the contents of any such linked site. The inclusion of any link does not imply endorsement by {siteConfig.name} of the site. Use of any such linked website is at the user's own risk.
+                {siteConfig.name} has not reviewed all of the sites linked to its website and is not responsible for the contents of any such linked site. The inclusion of any link does not imply endorsement by {siteConfig.name} of the site. Use of any such linked website is at the user&apos;s own risk.
               </p>
             </section>
 
@@ -175,7 +175,7 @@ export default function TermsPage() {
                 <li>Infringe on any intellectual property rights</li>
                 <li>Engage in harassment, abuse, or discrimination</li>
                 <li>Attempt to gain unauthorized access to our systems</li>
-                <li>Interfere with the website's operations</li>
+                <li>Interfere with the website&apos;s operations</li>
                 <li>Upload malware or harmful code</li>
               </ul>
             </section>

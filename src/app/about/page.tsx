@@ -29,12 +29,12 @@ export default function AboutPage() {
               <p>
                 {siteConfig.name} was founded on the belief that great fashion should be
                 accessible to everyone. What started as a small passion project has grown into a
-                thriving community of jacket enthusiasts. We're dedicated to providing
+                thriving community of jacket enthusiasts. We&apos;re dedicated to providing
                 high-quality, stylish jackets that make you feel confident and comfortable.
               </p>
               <p className="mt-4">
-                Our journey began with a simple question: "Why is it so hard to find the perfect
-                jacket?" We noticed that most people either settled for uncomfortable fits or
+                Our journey began with a simple question: &quot;Why is it so hard to find the perfect
+                jacket?&quot; We noticed that most people either settled for uncomfortable fits or
                 paid exorbitant prices for basic style. We decided to change that.
               </p>
             </section>
@@ -79,7 +79,7 @@ export default function AboutPage() {
                     Sustainability
                   </h3>
                   <p>
-                    We're committed to making environmentally responsible choices in our
+                    We&apos;re committed to making environmentally responsible choices in our
                     sourcing, manufacturing, and packaging.
                   </p>
                 </div>
@@ -137,13 +137,13 @@ export default function AboutPage() {
                 Our Commitment
               </h2>
               <p>
-                We're not just selling jackets—we're building a community of style-conscious
+                We&apos;re not just selling jackets—we&apos;re building a community of style-conscious
                 individuals who believe that fashion should be accessible, sustainable, and
-                enjoyable. We're committed to continuous improvement and innovation to bring you
+                enjoyable. We&apos;re committed to continuous improvement and innovation to bring you
                 the best products and experience possible.
               </p>
               <p className="mt-4">
-                Thank you for choosing {siteConfig.name}. We're excited to be part of your style
+                Thank you for choosing {siteConfig.name}. We&apos;re excited to be part of your style
                 journey!
               </p>
             </section>
@@ -153,7 +153,7 @@ export default function AboutPage() {
                 Get in Touch
               </h2>
               <p>
-                Have questions about our jackets or the {siteConfig.name} brand? We'd love to hear from you!
+                Have questions about our jackets or the {siteConfig.name} brand? We&apos;d love to hear from you!
               </p>
               <p className="mt-3">
                 <a

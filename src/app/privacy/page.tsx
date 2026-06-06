@@ -27,7 +27,7 @@ export default function PrivacyPage() {
                 1. Introduction
               </h2>
               <p>
-                {siteConfig.name} ("we," "us," "our," or "Company") is committed
+                {siteConfig.name} (&quot;we,&quot; &quot;us,&quot; &quot;our,&quot; or &quot;Company&quot;) is committed
                 to protecting your privacy. This Privacy Policy explains how we
                 collect, use, disclose, and safeguard your information when you
                 visit our website.
@@ -140,7 +140,7 @@ export default function PrivacyPage() {
 
             <section>
               <h2 className="mb-4 text-2xl font-semibold text-stone-900 dark:text-stone-50">
-                9. Children's Privacy
+                9. Children&apos;s Privacy
               </h2>
               <p>
                 Our Site is not intended for children under 13 years of age. We do not knowingly collect personal information from children under 13. If we become aware of such collection, we will promptly delete such information.
@@ -152,7 +152,7 @@ export default function PrivacyPage() {
                 10. Changes to This Privacy Policy
               </h2>
               <p>
-                We may update this Privacy Policy from time to time. We will notify you of significant changes by updating the "Last Updated" date below. Your continued use of our Site following the posting of revised Privacy Policy means that you accept and agree to the changes.
+                We may update this Privacy Policy from time to time. We will notify you of significant changes by updating the &quot;Last Updated&quot; date below. Your continued use of our Site following the posting of revised Privacy Policy means that you accept and agree to the changes.
               </p>
             </section>
 
