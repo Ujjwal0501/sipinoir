@@ -1,6 +1,6 @@
 "use client";
 
-import type { Metadata } from "next";
+import Link from "next/link";
 import { useState, FormEvent, ChangeEvent } from "react";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
@@ -53,7 +53,7 @@ export default function ContactPage() {
             Contact Us
           </h1>
           <p className="mb-12 text-lg text-stone-800 dark:text-stone-100">
-            We'd love to hear from you! Whether you have questions about our
+            We&apos;d love to hear from you! Whether you have questions about our
             products, feedback, or just want to say hello, feel free to reach out.
           </p>
 
@@ -65,7 +65,7 @@ export default function ContactPage() {
                   <div className="mb-6 rounded-lg bg-green-100 p-4 text-green-800 dark:bg-green-900/30 dark:text-green-200">
                     <p className="font-semibold">Thank you for your message!</p>
                     <p className="text-sm">
-                      We'll get back to you as soon as possible.
+                      We&apos;ll get back to you as soon as possible.
                     </p>
                   </div>
                 )}
@@ -173,7 +173,7 @@ export default function ContactPage() {
                   </a>
                 </p>
                 <p className="mt-2 text-sm text-stone-600 dark:text-stone-200">
-                  We'll respond within 24 hours
+                  We&apos;ll respond within 24 hours
                 </p>
               </div>
 
@@ -200,12 +200,12 @@ export default function ContactPage() {
                 </h3>
                 <ul className="space-y-2 text-sm text-stone-800 dark:text-stone-100">
                   <li>
-                    <a
+                    <Link
                       href="/blog"
                       className="hover:text-stone-700 dark:hover:text-stone-200"
                     >
                       → Read our blog
-                    </a>
+                    </Link>
                   </li>
                   <li>
                     <a
