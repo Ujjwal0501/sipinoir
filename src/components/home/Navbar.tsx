@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { useEffect, useState } from "react";
 
 import { MagneticLink } from "@/components/home/MagneticLink";
@@ -59,11 +60,7 @@ export function Navbar({ brand, navLinks, shopUrl }: NavbarProps) {
               href="#home"
               className="flex items-center gap-4 text-[0.82rem] font-bold uppercase tracking-[0.28em] text-[var(--ink)]"
             >
-              <div className="flex gap-[2px]">
-                <span className="w-1 h-3 bg-[var(--accent)]" />
-                <span className="w-1 h-3 bg-[var(--accent)]" />
-                <span className="w-1 h-3 bg-[var(--accent)] opacity-50" />
-              </div>
+              <Image src="/icon.png" alt="Sipi & Noir icon" width={32} height={32} />
               <span className="whitespace-nowrap text-[0.68rem] font-semibold tracking-[0.24em] text-[rgba(21,21,21,0.9)] sm:text-[0.84rem] sm:tracking-[0.34em]">
                 {brand}
               </span>
@@ -91,12 +88,15 @@ export function Navbar({ brand, navLinks, shopUrl }: NavbarProps) {
             </div>
 
             <div className="flex items-center gap-3 lg:hidden">
-              <MagneticLink
+              <a
                 href={shopUrl}
-                className="items-center border border-[rgba(21,21,21,0.14)] bg-[var(--accent-dark)] px-3 py-2 text-[0.62rem] font-bold uppercase tracking-[0.18em] text-[var(--surface-solid)] sm:px-3.5 sm:text-[0.65rem] sm:tracking-[0.22em]"
+                className="mt-2 bg-[var(--accent-dark)] px-4 py-3 text-[0.74rem] font-semibold uppercase tracking-[0.24em] text-[var(--surface-solid)]"
+                onClick={() => {
+                  setIsMenuOpen(false);
+                }}
               >
-                Shop
-              </MagneticLink>
+                Shop now
+              </a>
 
               <button
                 type="button"
@@ -127,7 +127,6 @@ export function Navbar({ brand, navLinks, shopUrl }: NavbarProps) {
                     )}
                   />
                 </span>
-                MENU
               </button>
             </div>
           </div>
@@ -141,8 +140,8 @@ export function Navbar({ brand, navLinks, shopUrl }: NavbarProps) {
                 : "mt-0 grid-rows-[0fr] opacity-0",
             )}
           >
-            <div className="overflow-hidden border border-[var(--line)] bg-[var(--surface)] p-3 shadow-[0_18px_40px_rgba(72,56,40,0.14)]">
-              <nav aria-label="Mobile" className="flex flex-col gap-1">
+            <div className="overflow-hidden border border-[var(--line)] bg-[var(--surface)] shadow-[0_18px_40px_rgba(72,56,40,0.14)]">
+              <nav aria-label="Mobile" className="m-3 flex flex-col gap-1">
                 {navLinks.map((link) => (
                   <a
                     key={link.label}
@@ -155,15 +154,6 @@ export function Navbar({ brand, navLinks, shopUrl }: NavbarProps) {
                     {link.label}
                   </a>
                 ))}
-                <a
-                  href={shopUrl}
-                  className="mt-2 bg-[var(--accent-dark)] px-4 py-3 text-[0.74rem] font-semibold uppercase tracking-[0.24em] text-[var(--surface-solid)]"
-                  onClick={() => {
-                    setIsMenuOpen(false);
-                  }}
-                >
-                  Shop now
-                </a>
               </nav>
             </div>
           </div>
