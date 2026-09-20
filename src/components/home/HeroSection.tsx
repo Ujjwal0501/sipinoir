@@ -333,7 +333,7 @@ export function HeroSection({ data, isReady }: HeroSectionProps) {
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_44%,rgba(255,255,255,0)_0%,rgba(255,255,255,0)_40%,rgba(243,236,228,0.22)_100%)]" />
       </div>
 
-      <div className="section-shell relative z-10 flex h-[100svh] flex-col items-center justify-start gap-4 px-0 pb-6 pt-24 sm:min-h-[100svh] sm:justify-between sm:gap-0 sm:pb-10 sm:pt-32">
+      <div className="section-shell relative z-10 flex h-[100svh] flex-col items-center justify-start gap-4 px-0 pb-6 pt-32 sm:min-h-[100svh] sm:justify-between sm:gap-0 sm:pb-10 sm:pt-32">
         <p className="border-label border border-[rgba(21,21,21,0.12)] bg-[rgba(250,247,242,0.78)] px-3.5 py-2 text-center shadow-[0_10px_24px_rgba(65,50,35,0.06)] backdrop-blur-md sm:px-4">
           {data.eyebrow}
         </p>

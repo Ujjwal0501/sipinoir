@@ -139,7 +139,7 @@ export const homepageData: HomepageData = {
     headline: "A New Spectrum of Intent.",
     body:
       "Vibrant energy meets quiet architecture. Sharp structure and light movement, now in living color.",
-    primaryCtaLabel: "Explore the spectrum",
+    primaryCtaLabel: "Shop All",
     primaryCtaHref: "#collection",
     secondaryCtaLabel: "See the details",
     secondaryCtaHref: "#details",

@@ -96,6 +96,10 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <head>
+        <meta
+          name="facebook-domain-verification"
+          content="u48g684sctoa7rwd49o7bvmei9d9hm"
+        />
         <Script
           src="https://www.googletagmanager.com/gtag/js?id=G-8LEFD0QMPT"
           strategy="afterInteractive"
