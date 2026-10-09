@@ -109,7 +109,9 @@ export default function RootLayout({
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
             gtag('js', new Date());
-            gtag('config', 'G-8LEFD0QMPT');
+            gtag('config', 'G-8LEFD0QMPT', {
+              linker: { domains: ['sipinoir.com', 'www.sipinoir.com', 'shop.sipinoir.com'] }
+            });
           `}
         </Script>
       </head>

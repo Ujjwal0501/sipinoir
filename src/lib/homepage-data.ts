@@ -139,8 +139,8 @@ export const homepageData: HomepageData = {
     headline: "A New Spectrum of Intent.",
     body:
       "Vibrant energy meets quiet architecture. Sharp structure and light movement, now in living color.",
-    primaryCtaLabel: "Shop All",
-    primaryCtaHref: "#collection",
+    primaryCtaLabel: "Shop Jackets",
+    primaryCtaHref: "https://shop.sipinoir.com",
     secondaryCtaLabel: "See the details",
     secondaryCtaHref: "#details",
     media: {
@@ -230,22 +230,23 @@ export const homepageData: HomepageData = {
     },
   },
   collection: {
-    label: "Collection",
-    heading: "A new spectrum, built around contrast and restraint.",
+    label: "Shop the collection",
+    heading: "Find the jacket that moves with you.",
     body:
-      "The homepage closes on product, but the presentation stays editorial and light.",
+      "Start with our newest bestseller, then explore performance layers made for everyday movement.",
     products: [
       {
-        badge: "New Arrival",
-        label: "Black & Orange",
-        title: "Bengaluru Windcheater Jacket",
+        badge: "New · Bestseller",
+        label: "Black",
+        title: "Delhi Piping Windcheater Jacket",
         description:
-          "Vibrant energy and lightweight protection for daily wear.",
-        href: "https://shop.sipinoir.com/products/bengaluru-black-white-windcheater-jacket",
+          "Our newest and most-loved lightweight layer, defined by sharp piping and everyday ease.",
+        href: "https://shop.sipinoir.com/products/delhi-piping-windcheater-jacket",
         media: {
-          imageSrc: "/images/jacket-orange-ad.png",
-          posterSrc: "/images/jacket-orange-ad.png",
-          alt: "Bengaluru Windcheater Jacket shown in motion.",
+          videoSrc: "/media/delhi-piping-black.mp4",
+          imageSrc: "/images/jacket-grey-blue.png",
+          posterSrc: "/images/jacket-grey-blue.png",
+          alt: "Black Delhi Piping Windcheater Jacket shown from multiple angles.",
           fit: "contain",
         },
       },
@@ -263,15 +264,16 @@ export const homepageData: HomepageData = {
         },
       },
       {
-        badge: "Core",
-        label: "Teal Green",
-        title: "Delhi Piping Jacket",
-        description: "Subtle piping accents on a clean foundation.",
-        href: "https://shop.sipinoir.com/products/delhi-piping-windcheater-jacket?variant=52504022909221",
+        badge: "New Arrival",
+        label: "Black & Orange",
+        title: "Bengaluru Windcheater Jacket",
+        description:
+          "Vibrant energy and lightweight protection for daily wear.",
+        href: "https://shop.sipinoir.com/products/bengaluru-black-white-windcheater-jacket",
         media: {
-          imageSrc: "/images/jacket-grey-blue.png",
-          posterSrc: "/images/jacket-grey-blue.png",
-          alt: "Delhi Piping Jacket in Teal Green.",
+          imageSrc: "/images/jacket-orange-ad.png",
+          posterSrc: "/images/jacket-orange-ad.png",
+          alt: "Bengaluru Windcheater Jacket shown in motion.",
           fit: "contain",
         },
       },

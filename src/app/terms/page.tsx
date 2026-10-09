@@ -150,7 +150,7 @@ export default function TermsPage() {
                 12. Returns and Refunds
               </h2>
               <p>
-                Items may be returned within 30 days of purchase in their original condition with original tags attached. Refunds will be processed after we receive and inspect the returned items. Please refer to our returns policy for more details.
+                Returns are handled according to our Return Policy. Please review the current return window, eligibility requirements, and instructions before placing an order.
               </p>
             </section>
 

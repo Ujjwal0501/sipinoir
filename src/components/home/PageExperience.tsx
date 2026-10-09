@@ -18,6 +18,16 @@ import { useLenis } from "@/hooks/useLenis";
 import { usePrefersReducedMotion } from "@/hooks/usePrefersReducedMotion";
 import type { HomepageData } from "@/lib/homepage-data";
 
+declare global {
+  interface Window {
+    gtag?: (
+      command: "event",
+      eventName: string,
+      parameters: Record<string, string>,
+    ) => void;
+  }
+}
+
 type PageExperienceProps = {
   data: HomepageData;
 };
@@ -28,6 +38,29 @@ export function PageExperience({ data }: PageExperienceProps) {
   const [isReady, setIsReady] = useState(false);
 
   useLenis();
+
+  useEffect(() => {
+    const trackShopClick = (event: MouseEvent): void => {
+      const target = event.target as HTMLElement | null;
+      const link = target?.closest<HTMLAnchorElement>("a[href]");
+
+      if (!link || !link.href.includes("shop.sipinoir.com")) {
+        return;
+      }
+
+      const eventName = link.href.includes("/products/")
+        ? "select_item"
+        : "shop_handoff";
+
+      window.gtag?.("event", eventName, {
+        link_url: link.href,
+        link_text: link.textContent?.trim() ?? "",
+      });
+    };
+
+    document.addEventListener("click", trackShopClick);
+    return () => document.removeEventListener("click", trackShopClick);
+  }, []);
 
   useEffect(() => {
     const frame = window.requestAnimationFrame(() => {
@@ -112,12 +145,12 @@ export function PageExperience({ data }: PageExperienceProps) {
 
       <main className="relative z-10 overflow-x-clip">
         <HeroSection data={data.hero} isReady={isReady} />
+        <CollectionSection data={data.collection} />
         <ManifestoSection data={data.manifesto} />
         <PinnedRevealSection data={data.reveal} />
         <DetailBandSection data={data.detailBand} />
         <PerformanceCardsSection data={data.performance} />
         <LifestyleSection data={data.lifestyle} />
-        <CollectionSection data={data.collection} />
         <FinalCtaSection data={data.finalCta} />
       </main>
 

@@ -14,12 +14,20 @@ export function CollectionSection({ data }: CollectionSectionProps) {
   return (
     <section id="collection" className="relative py-24 sm:py-28 lg:py-32">
       <div className="section-shell space-y-14">
-        <SectionHeading
-          label={data.label}
-          title={data.heading}
-          body={data.body}
-          className="max-w-[52rem]"
-        />
+        <div className="flex flex-col gap-6 sm:flex-row sm:items-end sm:justify-between">
+          <SectionHeading
+            label={data.label}
+            title={data.heading}
+            body={data.body}
+            className="max-w-[52rem]"
+          />
+          <MagneticLink
+            href="https://shop.sipinoir.com"
+            className="w-fit items-center justify-center border border-[rgba(21,21,21,0.18)] px-5 py-3 text-[0.72rem] font-semibold uppercase tracking-[0.2em] text-[var(--ink)] transition-colors hover:bg-[var(--accent-dark)] hover:text-[var(--surface-solid)]"
+          >
+            View all jackets
+          </MagneticLink>
+        </div>
 
         <div className="space-y-14">
           {data.products.map((product, index) => {
@@ -44,9 +52,15 @@ export function CollectionSection({ data }: CollectionSectionProps) {
                     </div>
 
                     <div className="space-y-4">
-                      <h3 className="display-title max-w-[10ch] text-[2.8rem] leading-[0.96] text-[var(--ink)] sm:text-[3.5rem]">
-                        {product.title}
-                      </h3>
+                      <MagneticLink
+                        href={product.href}
+                        ariaLabel={`View ${product.title}`}
+                        className="block w-fit"
+                      >
+                        <h3 className="display-title max-w-[10ch] text-[2.8rem] leading-[0.96] text-[var(--ink)] transition-colors hover:text-[var(--accent)] sm:text-[3.5rem]">
+                          {product.title}
+                        </h3>
+                      </MagneticLink>
                       <p className="section-copy max-w-[30ch] text-[1rem]">
                         {product.description}
                       </p>
@@ -55,21 +69,24 @@ export function CollectionSection({ data }: CollectionSectionProps) {
                     <div className="space-y-4">
                       <div className="flex items-center gap-4">
                         <div className="h-px w-16 bg-[rgba(21,21,21,0.14)]" />
-                        <span className="border-label">clip + still</span>
+                        <span className="border-label">View details</span>
                       </div>
 
                       <MagneticLink
                         href={product.href}
                         className="items-center justify-center border border-[rgba(21,21,21,0.14)] bg-[var(--accent-dark)] px-5 py-3 text-[0.74rem] font-semibold uppercase tracking-[0.24em] text-[var(--surface-solid)]"
                       >
-                        Shop now
+                        View jacket
                       </MagneticLink>
                     </div>
                   </div>
 
-                  <div
+                  <MagneticLink
+                    href={product.href}
+                    ariaLabel={`Shop ${product.title}`}
+                    dataCursor="media"
                     className={cn(
-                      "media-shell cut-panel relative bg-[rgba(234,225,214,0.86)] lg:col-span-8",
+                      "media-shell cut-panel relative block overflow-hidden bg-[rgba(234,225,214,0.86)] lg:col-span-8",
                       isReversed && "lg:order-1",
                     )}
                   >
@@ -88,11 +105,20 @@ export function CollectionSection({ data }: CollectionSectionProps) {
                       </div>
                       <div className="hidden h-px w-28 bg-[rgba(250,247,242,0.62)] sm:block" />
                     </div>
-                  </div>
+                  </MagneticLink>
                 </div>
               </article>
             );
           })}
+        </div>
+
+        <div className="flex justify-center border-t border-[var(--line)] pt-8">
+          <MagneticLink
+            href="https://shop.sipinoir.com"
+            className="items-center justify-center bg-[var(--accent-dark)] px-7 py-3 text-[0.74rem] font-semibold uppercase tracking-[0.22em] text-[var(--surface-solid)]"
+          >
+            View all jackets
+          </MagneticLink>
         </div>
       </div>
     </section>
